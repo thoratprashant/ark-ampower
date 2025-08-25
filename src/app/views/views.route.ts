@@ -1,11 +1,7 @@
 import type { Route } from "@angular/router";
 
 export const VIEWS_ROUTES: Route[] = [
-  {
-    path: 'dashboards',
-    loadChildren: () =>
-      import('./dashboards/dashboard.route').then((mod) => mod.DASHBOARD_ROUTES),
-  },
+ 
   {
     path: 'apps',
     loadChildren: () =>

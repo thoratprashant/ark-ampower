@@ -1,15 +1,9 @@
-import type { Route } from "@angular/router";
-import { ChatComponent } from "./chat/chat.component";
+import type { Route } from "@angular/router"; 
 import { CalendarComponent } from "./calendar/calendar.component";
 import { EmailComponent } from "./email/email.component";
 import { FileManagerComponent } from "./file-manager/file-manager.component";
 
-export const APPS_ROUTES: Route[] = [
-  {
-    path: 'chat',
-    component: ChatComponent,
-    data: { title: 'Chat' }
-  },
+export const APPS_ROUTES: Route[] = [ 
   {
     path: 'calendar',
     component: CalendarComponent,

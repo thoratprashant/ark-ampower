@@ -24,44 +24,44 @@ export type SubMenus = {
 }
 
 export const MENU_ITEMS: MenuItemType[] = [
-  {
-    key: 'dash',
-    label: 'Dash',
-    isTitle: true,
-  },
-  {
-    key: 'sales',
-    label: 'Sales',
-    icon: 'ti-dashboard',
-    url: '/dashboards/sales',
-    badge: {
-      text: "5",
-      variant: "success",
-    }
-  },
-  {
-    key: 'clinic',
-    label: 'Clinic',
-    icon: 'ti-building-hospital',
-    url: '/dashboards/clinic',
-  },
-  {
-    key: 'wallet',
-    label: 'eWallet',
-    icon: 'ti-wallet',
-    url: '/dashboards/wallet',
-  },
+  // {
+  //   key: 'dash',
+  //   label: 'Dash',
+  //   isTitle: true,
+  // },
+  // {
+  //   key: 'sales',
+  //   label: 'Sales',
+  //   icon: 'ti-dashboard',
+  //   url: '/dashboards/sales',
+  //   badge: {
+  //     text: "5",
+  //     variant: "success",
+  //   }
+  // },
+  // {
+  //   key: 'clinic',
+  //   label: 'Clinic',
+  //   icon: 'ti-building-hospital',
+  //   url: '/dashboards/clinic',
+  // },
+  // {
+  //   key: 'wallet',
+  //   label: 'eWallet',
+  //   icon: 'ti-wallet',
+  //   url: '/dashboards/wallet',
+  // },
   {
     key: 'apps',
     label: 'Apps & Pages',
     isTitle: true
   },
-  {
-    key: 'chat',
-    label: 'Chat',
-    icon: 'ti-message',
-    url: '/apps/chat',
-  },
+  // {
+  //   key: 'chat',
+  //   label: 'Chat',
+  //   icon: 'ti-message',
+  //   url: '/apps/chat',
+  // },
   {
     key: 'calendar',
     label: 'Calendar',
