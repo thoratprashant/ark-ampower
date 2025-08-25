@@ -1,12 +1,6 @@
 import type { Route } from "@angular/router";
 
-export const VIEWS_ROUTES: Route[] = [
- 
-  {
-    path: 'apps',
-    loadChildren: () =>
-      import('./apps/apps.route').then((mod) => mod.APPS_ROUTES),
-  },
+export const VIEWS_ROUTES: Route[] = [ 
   {
     path: 'hospital',
     loadChildren: () =>
