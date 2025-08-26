@@ -26,15 +26,7 @@
         font-size: 100px;
     }
 }
-
-.text-bg {
-    background-image: url("../../images/small/small-3.jpg");
-    background-position: center;
-    background-size: contain;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(3px 0px 7px #241c81);
-}
+ 
 
 .error-section {
     background-image: linear-gradient(#ffffff08 2px, transparent 2px),
