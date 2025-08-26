@@ -62,256 +62,256 @@ export const MENU_ITEMS: MenuItemType[] = [
   //   icon: 'ti-message',
   //   url: '/apps/chat',
   // },
-  {
-    key: 'calendar',
-    label: 'Calendar',
-    icon: 'ti-calendar',
-    url: '/apps/calendar',
-  },
-  {
-    key: 'email',
-    label: 'Email',
-    icon: 'ti-inbox',
-    url: '/apps/email',
-  },
-  {
-    key: 'file-manager',
-    label: 'File Manager',
-    icon: 'ti-folder',
-    url: '/apps/file-manager',
-  },
-  {
-    key: 'hospital',
-    label: 'Hospital',
-    collapsed: true,
-    icon: 'ti-medical-cross',
-    children: [
-      {
-        key: 'doctors',
-        label: 'Doctors',
-        url: '/hospital/doctors',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'doctor-details',
-        label: 'Doctor Details',
-        url: '/hospital/doctors-details',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'add-doctors',
-        label: 'Add Doctors',
-        url: '/hospital/add-doctors',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'Patients',
-        label: 'Patients',
-        url: '/hospital/patients',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'patients-details',
-        label: 'Patient Details',
-        url: '/hospital/patients-details',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'add-patients',
-        label: 'Add Patient',
-        url: '/hospital/add-patients',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'appointments',
-        label: 'Appointments',
-        url: '/hospital/appointments',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'payments',
-        label: 'Payments',
-        url: '/hospital/payments',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'departments',
-        label: 'Departments',
-        url: '/hospital/departments',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'reviews',
-        label: 'Reviews',
-        url: '/hospital/reviews',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'hospital-contacts',
-        label: 'Hospital Contacts',
-        url: '/hospital/hospital-contacts',
-        parentKey: 'hospital',
-      },
-      {
-        key: 'staffs',
-        label: 'Staffs',
-        url: '/hospital/staffs',
-        parentKey: 'hospital',
-      },
-    ]
-  },
-  {
-    key: 'e-commerce',
-    label: 'Ecommerce',
-    collapsed: true,
-    icon: 'ti-basket',
-    children: [
-      {
-        key: 'products',
-        label: 'Products',
-        url: '/ecommerce/products',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'products-grid',
-        label: 'Products Grid',
-        url: '/ecommerce/products-grid',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'product-details',
-        label: 'Products Details',
-        url: '/ecommerce/product-details',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'add-products',
-        label: 'Add Products',
-        url: '/ecommerce/add-products',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'categories',
-        label: 'Categories',
-        url: '/ecommerce/categories',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'order-details',
-        label: 'Order Details',
-        url: '/ecommerce/order-details',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'orders',
-        label: 'Orders',
-        url: '/ecommerce/orders',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'customers',
-        label: 'Customers',
-        url: '/ecommerce/customers',
-        parentKey: 'e-commerce',
-      },
-      {
-        key: 'sellers',
-        label: 'Sellers',
-        url: '/ecommerce/sellers',
-        parentKey: 'e-commerce',
-      },
-    ]
-  },
-  {
-    key: 'invoice',
-    label: 'Invoice',
-    icon: 'ti-file-invoice',
-    collapsed: true,
-    children: [
-      {
-        key: 'invoices',
-        label: 'Invoice',
-        url: '/invoice/invoices',
-        parentKey: 'invoice',
-      },
-      {
-        key: 'view-invoice',
-        label: 'View Invoice',
-        url: '/invoice/view',
-        parentKey: 'invoice',
-      },
-      {
-        key: 'create-invoice',
-        label: 'Create Invoice',
-        url: '/invoice/create',
-        parentKey: 'invoice',
-      },
-    ]
-  },
-  {
-    key: 'pages',
-    label: 'Pages',
-    icon: 'ti-files',
-    collapsed: true,
-    children: [
-      {
-        key: 'starter-page',
-        label: 'Starter Page',
-        url: '/pages/starter-page',
-        parentKey: 'pages',
-      },
-      {
-        key: 'faq',
-        label: 'FAQ',
-        url: '/pages/faq',
-        parentKey: 'pages',
-      },
-      {
-        key: 'maintenance',
-        label: 'Maintenance',
-        url: '/maintenance',
-        parentKey: 'pages',
-      },
-      {
-        key: 'timeline',
-        label: 'Timeline',
-        url: '/pages/timeline',
-        parentKey: 'pages',
-      },
-      {
-        key: 'coming-soon',
-        label: 'Coming Soon',
-        url: '/coming-soon',
-        parentKey: 'pages',
-      },
-      {
-        key: 'terms-conditions',
-        label: 'Terms & Conditions',
-        url: '/pages/terms-conditions',
-        parentKey: 'pages',
-      },
-    ]
-  },
-  {
-    key: 'pricing',
-    label: 'Pricing',
-    icon: 'ti-receipt-2',
-    collapsed: true,
-    children: [
-      {
-        key: 'pricing-one',
-        label: 'Pricing One',
-        url: '/pricing/pricing-one',
-        parentKey: 'pricing',
-      },
-      {
-        key: 'pricing-two',
-        label: 'Pricing Two',
-        url: '/pricing/pricing-two',
-        parentKey: 'pricing',
-      },
-    ]
-  },
+  // {
+  //   key: 'calendar',
+  //   label: 'Calendar',
+  //   icon: 'ti-calendar',
+  //   url: '/apps/calendar',
+  // },
+  // {
+  //   key: 'email',
+  //   label: 'Email',
+  //   icon: 'ti-inbox',
+  //   url: '/apps/email',
+  // },
+  // {
+  //   key: 'file-manager',
+  //   label: 'File Manager',
+  //   icon: 'ti-folder',
+  //   url: '/apps/file-manager',
+  // },
+  // {
+  //   key: 'hospital',
+  //   label: 'Hospital',
+  //   collapsed: true,
+  //   icon: 'ti-medical-cross',
+  //   children: [
+  //     {
+  //       key: 'doctors',
+  //       label: 'Doctors',
+  //       url: '/hospital/doctors',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'doctor-details',
+  //       label: 'Doctor Details',
+  //       url: '/hospital/doctors-details',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'add-doctors',
+  //       label: 'Add Doctors',
+  //       url: '/hospital/add-doctors',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'Patients',
+  //       label: 'Patients',
+  //       url: '/hospital/patients',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'patients-details',
+  //       label: 'Patient Details',
+  //       url: '/hospital/patients-details',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'add-patients',
+  //       label: 'Add Patient',
+  //       url: '/hospital/add-patients',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'appointments',
+  //       label: 'Appointments',
+  //       url: '/hospital/appointments',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'payments',
+  //       label: 'Payments',
+  //       url: '/hospital/payments',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'departments',
+  //       label: 'Departments',
+  //       url: '/hospital/departments',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'reviews',
+  //       label: 'Reviews',
+  //       url: '/hospital/reviews',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'hospital-contacts',
+  //       label: 'Hospital Contacts',
+  //       url: '/hospital/hospital-contacts',
+  //       parentKey: 'hospital',
+  //     },
+  //     {
+  //       key: 'staffs',
+  //       label: 'Staffs',
+  //       url: '/hospital/staffs',
+  //       parentKey: 'hospital',
+  //     },
+  //   ]
+  // },
+  // {
+  //   key: 'e-commerce',
+  //   label: 'Ecommerce',
+  //   collapsed: true,
+  //   icon: 'ti-basket',
+  //   children: [
+  //     {
+  //       key: 'products',
+  //       label: 'Products',
+  //       url: '/ecommerce/products',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'products-grid',
+  //       label: 'Products Grid',
+  //       url: '/ecommerce/products-grid',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'product-details',
+  //       label: 'Products Details',
+  //       url: '/ecommerce/product-details',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'add-products',
+  //       label: 'Add Products',
+  //       url: '/ecommerce/add-products',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'categories',
+  //       label: 'Categories',
+  //       url: '/ecommerce/categories',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'order-details',
+  //       label: 'Order Details',
+  //       url: '/ecommerce/order-details',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'orders',
+  //       label: 'Orders',
+  //       url: '/ecommerce/orders',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'customers',
+  //       label: 'Customers',
+  //       url: '/ecommerce/customers',
+  //       parentKey: 'e-commerce',
+  //     },
+  //     {
+  //       key: 'sellers',
+  //       label: 'Sellers',
+  //       url: '/ecommerce/sellers',
+  //       parentKey: 'e-commerce',
+  //     },
+  //   ]
+  // },
+  // {
+  //   key: 'invoice',
+  //   label: 'Invoice',
+  //   icon: 'ti-file-invoice',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'invoices',
+  //       label: 'Invoice',
+  //       url: '/invoice/invoices',
+  //       parentKey: 'invoice',
+  //     },
+  //     {
+  //       key: 'view-invoice',
+  //       label: 'View Invoice',
+  //       url: '/invoice/view',
+  //       parentKey: 'invoice',
+  //     },
+  //     {
+  //       key: 'create-invoice',
+  //       label: 'Create Invoice',
+  //       url: '/invoice/create',
+  //       parentKey: 'invoice',
+  //     },
+  //   ]
+  // },
+  // {
+  //   key: 'pages',
+  //   label: 'Pages',
+  //   icon: 'ti-files',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'starter-page',
+  //       label: 'Starter Page',
+  //       url: '/pages/starter-page',
+  //       parentKey: 'pages',
+  //     },
+  //     {
+  //       key: 'faq',
+  //       label: 'FAQ',
+  //       url: '/pages/faq',
+  //       parentKey: 'pages',
+  //     },
+  //     {
+  //       key: 'maintenance',
+  //       label: 'Maintenance',
+  //       url: '/maintenance',
+  //       parentKey: 'pages',
+  //     },
+  //     {
+  //       key: 'timeline',
+  //       label: 'Timeline',
+  //       url: '/pages/timeline',
+  //       parentKey: 'pages',
+  //     },
+  //     {
+  //       key: 'coming-soon',
+  //       label: 'Coming Soon',
+  //       url: '/coming-soon',
+  //       parentKey: 'pages',
+  //     },
+  //     {
+  //       key: 'terms-conditions',
+  //       label: 'Terms & Conditions',
+  //       url: '/pages/terms-conditions',
+  //       parentKey: 'pages',
+  //     },
+  //   ]
+  // },
+  // {
+  //   key: 'pricing',
+  //   label: 'Pricing',
+  //   icon: 'ti-receipt-2',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'pricing-one',
+  //       label: 'Pricing One',
+  //       url: '/pricing/pricing-one',
+  //       parentKey: 'pricing',
+  //     },
+  //     {
+  //       key: 'pricing-two',
+  //       label: 'Pricing Two',
+  //       url: '/pricing/pricing-two',
+  //       parentKey: 'pricing',
+  //     },
+  //   ]
+  // },
   {
     key: 'auth',
     label: 'Auth Pages',
@@ -448,32 +448,32 @@ export const MENU_ITEMS: MenuItemType[] = [
 
     ]
   },
-  {
-    key: 'email-templates',
-    label: 'Email Templates',
-    icon: 'ti-news',
-    collapsed: true,
-    children: [
-      {
-        key: 'basic-email',
-        label: 'Basic Email',
-        url: '/email-templates/basic',
-        parentKey: 'email-templates',
-      },
-      {
-        key: 'purchase-invoice',
-        label: 'Purchase Invoice',
-        url: '/email-templates/purchase',
-        parentKey: 'email-templates',
-      },
-      {
-        key: 'account-activation',
-        label: 'Account Activation',
-        url: '/email-templates/account-activation',
-        parentKey: 'email-templates',
-      },
-    ]
-  },
+  // {
+  //   key: 'email-templates',
+  //   label: 'Email Templates',
+  //   icon: 'ti-news',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'basic-email',
+  //       label: 'Basic Email',
+  //       url: '/email-templates/basic',
+  //       parentKey: 'email-templates',
+  //     },
+  //     {
+  //       key: 'purchase-invoice',
+  //       label: 'Purchase Invoice',
+  //       url: '/email-templates/purchase',
+  //       parentKey: 'email-templates',
+  //     },
+  //     {
+  //       key: 'account-activation',
+  //       label: 'Account Activation',
+  //       url: '/email-templates/account-activation',
+  //       parentKey: 'email-templates',
+  //     },
+  //   ]
+  // },
   {
     key: 'Components',
     label: 'COMPONENTS',

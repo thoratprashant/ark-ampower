@@ -35,13 +35,13 @@ export const routes: Routes = [
         (mod) => mod.OTHER_ROUTES
       ),
   },
-  {
-    path: 'email-templates',
-    loadChildren: () =>
-      import('./views/email-templates/email-template.route').then(
-        (mod) => mod.EMAIL_TEMPLATE_ROUTES
-      ),
-  },
+  // {
+  //   path: 'email-templates',
+  //   loadChildren: () =>
+  //     import('./views/email-templates/email-template.route').then(
+  //       (mod) => mod.EMAIL_TEMPLATE_ROUTES
+  //     ),
+  // },
   {
     path: '',
     component: AuthLayoutComponent,
