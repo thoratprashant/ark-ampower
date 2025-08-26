@@ -7,13 +7,7 @@ const dropbox = 'assets/images/brands/dropbox.svg'
 const gitlab = 'assets/images/brands/gitlab.svg'
 const googleCloud = 'assets/images/brands/google-cloud.svg'
 const slack = 'assets/images/brands/slack.svg'
-
-const flagUs = "assets/images/flags/us.svg"
-const flagsIn = "assets/images/flags/in.svg"
-const flagsDe = "assets/images/flags/de.svg"
-const flagsIt = "assets/images/flags/it.svg"
-const flagsEs = "assets/images/flags/es.svg"
-const flagsRu = "assets/images/flags/ru.svg"
+ 
 
 export type AppsType = {
   name: string
@@ -64,29 +58,4 @@ export const appData: AppsType[] = [
   },
 ]
 
-export const languages: LanguageType[] = [
-  {
-    name: "English",
-    flag: flagUs,
-  },
-  {
-    name: "Hindi",
-    flag: flagsIn,
-  },
-  {
-    name: "German",
-    flag: flagsDe,
-  },
-  {
-    name: "Italian",
-    flag: flagsIt,
-  },
-  {
-    name: "Spanish",
-    flag: flagsEs,
-  },
-  {
-    name: "Russian",
-    flag: flagsRu,
-  },
-]
+ 

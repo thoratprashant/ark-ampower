@@ -5,9 +5,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, EventEmitter, inject, Output, type O
 import { Router, RouterLink } from '@angular/router';
 import { NgbDropdownModule, NgbModal, NgbModalModule, NgbOffcanvasModule } from '@ng-bootstrap/ng-bootstrap';
 import { Store } from '@ngrx/store';
-import { appData, languages } from './data';
-import { SimplebarAngularModule } from 'simplebar-angular';
-import { splitArray } from '@core/helper/utils';
+import { appData } from './data';
+import { SimplebarAngularModule } from 'simplebar-angular'; 
 import { LogoBoxComponent } from "@components/logo-box.component";
 import { currency } from '@common/constants';
 import { logout } from '@/store/authentication/authentication.actions';
@@ -23,9 +22,7 @@ import { logout } from '@/store/authentication/authentication.actions';
 export class TopbarComponent implements OnInit {
 
   currency=currency
-
-  languageList = languages
-  appsChunks = splitArray(appData, 3);
+  
   
   @Output() settingsButtonClicked = new EventEmitter();
   @Output() mobileMenuButtonClicked = new EventEmitter();
