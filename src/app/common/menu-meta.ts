@@ -479,208 +479,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     label: 'COMPONENTS',
     isTitle: true,
   },
-  {
-    key: 'base-ui',
-    label: 'Base UI',
-    icon: 'ti-brightness',
-    collapsed: true,
-    children: [
-      {
-        key: 'base-ui-accordions',
-        label: 'Accordions',
-        url: '/ui/accordions',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-alerts',
-        label: 'Alerts',
-        url: '/ui/alerts',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-avatars',
-        label: 'Avatars',
-        url: '/ui/avatars',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-badges',
-        label: 'Badges',
-        url: '/ui/badges',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-breadcrumb',
-        label: 'Breadcrumb',
-        url: '/ui/breadcrumb',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-buttons',
-        label: 'Buttons',
-        url: '/ui/buttons',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-cards',
-        label: 'Cards',
-        url: '/ui/cards',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-carousel',
-        label: 'Carousel',
-        url: '/ui/carousel',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-collapse',
-        label: 'Collapse',
-        url: '/ui/collapse',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-dropdowns',
-        label: 'Dropdowns',
-        url: '/ui/dropdowns',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'ul-ratio',
-        label: 'Ratio',
-        url: '/ui/ratio',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'ul-grid',
-        label: 'Grid',
-        url: '/ui/grid',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'ul-links',
-        label: 'Links',
-        url: '/ui/links',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-list-group',
-        label: 'List Group',
-        url: '/ui/list-group',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-modals',
-        label: 'Modals',
-        url: '/ui/modals',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-notifications',
-        label: 'Notifications',
-        url: '/ui/notifications',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-offcanvas',
-        label: 'Offcanvas',
-        url: '/ui/offcanvas',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-placeholders',
-        label: 'Placeholders',
-        url: '/ui/placeholders',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-pagination',
-        label: 'Pagination',
-        url: '/ui/pagination',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-popovers',
-        label: 'Popovers',
-        url: '/ui/popovers',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-progress',
-        label: 'Progress',
-        url: '/ui/progress',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-scrollspy',
-        label: 'Scrollspy',
-        url: '/ui/scrollspy',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-spinners',
-        label: 'Spinners',
-        url: '/ui/spinners',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-tabs',
-        label: 'Tabs',
-        url: '/ui/tabs',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-tooltips',
-        label: 'Tooltips',
-        url: '/ui/tooltips',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-typography',
-        label: 'Typography',
-        url: '/ui/typography',
-        parentKey: 'base-ui',
-      },
-      {
-        key: 'base-ui-utilities',
-        label: 'Utilities',
-        url: '/ui/utilities',
-        parentKey: 'base-ui',
-      },
-    ]
-  },
-  {
-    key: 'extended-ui',
-    label: 'Extended UI',
-    icon: 'ti-alien',
-    collapsed: true,
-    children: [
-      {
-        key: 'dragula',
-        label: 'Dragula',
-        url: '/extended-ui/dragula',
-        parentKey: 'extended-ui',
-      },
-      {
-        key: 'sweet-alert',
-        label: 'Sweet Alert',
-        url: '/extended-ui/sweet-alert',
-        parentKey: 'extended-ui',
-      },
-      {
-        key: 'ratings',
-        label: 'Ratings',
-        url: '/extended-ui/ratings',
-        parentKey: 'extended-ui',
-      },
-      {
-        key: 'scrollbar',
-        label: 'Scrollbar',
-        url: '/extended-ui/scrollbar',
-        parentKey: 'extended-ui',
-      },
-    ]
-  },
+ 
   {
     key: 'icons',
     label: 'Icons',
@@ -701,289 +500,68 @@ export const MENU_ITEMS: MenuItemType[] = [
       },
     ]
   },
-  {
-    key: 'charts',
-    label: 'Charts',
-    icon: 'ti-chart-arcs',
-    collapsed: true,
-    children: [
-      {
-        key: 'area',
-        label: 'Area',
-        url: '/charts/area',
-        parentKey: 'charts',
-      },
-      {
-        key: 'bar',
-        label: 'Bar',
-        url: '/charts/bar',
-        parentKey: 'charts',
-      },
-      {
-        key: 'bubble',
-        label: 'Bubble',
-        url: '/charts/bubble',
-        parentKey: 'charts',
-      },
-      {
-        key: 'candlestick',
-        label: 'Candlestick',
-        url: '/charts/candlestick',
-        parentKey: 'charts',
-      },
-      {
-        key: 'column',
-        label: 'Column',
-        url: '/charts/column',
-        parentKey: 'charts',
-      },
-      {
-        key: 'heatmap',
-        label: 'Heatmap',
-        url: '/charts/heatmap',
-        parentKey: 'charts',
-      },
-      {
-        key: 'line',
-        label: 'Line',
-        url: '/charts/line',
-        parentKey: 'charts',
-      },
-      {
-        key: 'mixed',
-        label: 'Mixed',
-        url: '/charts/mixed',
-        parentKey: 'charts',
-      },
-      {
-        key: 'timeline-chart',
-        label: 'Timeline',
-        url: '/charts/timeline',
-        parentKey: 'charts',
-      },
-      {
-        key: 'boxplot',
-        label: 'Boxplot',
-        url: '/charts/boxplot',
-        parentKey: 'charts',
-      },
-      {
-        key: 'treemap',
-        label: 'Treemap',
-        url: '/charts/treemap',
-        parentKey: 'charts',
-      },
-      {
-        key: 'pie',
-        label: 'Pie',
-        url: '/charts/pie',
-        parentKey: 'charts',
-      },
-      {
-        key: 'radar',
-        label: 'Radar',
-        url: '/charts/radar',
-        parentKey: 'charts',
-      },
-      {
-        key: 'radialBar',
-        label: 'RadialBar',
-        url: '/charts/radialbar',
-        parentKey: 'charts',
-      },
-      {
-        key: 'scatter',
-        label: 'Scatter',
-        url: '/charts/scatter',
-        parentKey: 'charts',
-      },
-      {
-        key: 'polar',
-        label: 'Polar Area',
-        url: '/charts/polar',
-        parentKey: 'charts',
-      },
-      {
-        key: 'sparklines',
-        label: 'Sparklines',
-        url: '/charts/sparklines',
-        parentKey: 'charts',
-      },
-    ],
-  },
-  {
-    key: 'form',
-    label: 'Forms',
-    icon: 'ti-forms',
-    collapsed: true,
-    children: [
-      {
-        key: 'basic-elements',
-        label: 'Basic Elements',
-        url: '/form/basic-elements',
-        parentKey: 'form',
-      },
-      {
-        key: 'inputmask',
-        label: 'Inputmask',
-        url: '/form/inputmask',
-        parentKey: 'form',
-      },
-      {
-        key: 'picker',
-        label: 'Picker',
-        url: '/form/picker',
-        parentKey: 'form',
-      },
-      {
-        key: 'select',
-        label: 'Select',
-        url: '/form/select',
-        parentKey: 'form',
-      },
-      {
-        key: 'slider',
-        label: 'Range Slider',
-        url: '/form/slider',
-        parentKey: 'form',
-      },
-      {
-        key: 'validation',
-        label: 'Validation',
-        url: '/form/validation',
-        parentKey: 'form',
-      },
-      {
-        key: 'wizard',
-        label: 'Wizard',
-        url: '/form/wizard',
-        parentKey: 'form',
-      },
-      {
-        key: 'file-uploads',
-        label: 'File Uploads',
-        url: '/form/file-uploads',
-        parentKey: 'form',
-      },
-      {
-        key: 'editors',
-        label: 'Editors',
-        url: '/form/editors',
-        parentKey: 'form',
-      },
-      {
-        key: 'layouts',
-        label: 'Layouts',
-        url: '/form/layouts',
-        parentKey: 'form',
-      },
-    ]
-  },
-  {
-    key: 'tables',
-    label: 'Tables',
-    icon: 'ti-table',
-    collapsed: true,
-    children: [
-      {
-        key: 'basic-tables',
-        label: 'Basic Tables',
-        url: '/tables/basic-tables',
-        parentKey: 'tables',
-      },
-      {
-        key: 'data-table',
-        label: 'Data Tables',
-        url: '/tables/datatable',
-        parentKey: 'tables',
-      },
-    ]
-  },
-  {
-    key: 'maps',
-    label: 'Maps',
-    icon: 'ti-map-pin',
-    collapsed: true,
-    children: [
-      {
-        key: 'google',
-        label: 'Google Maps',
-        url: '/maps/google',
-        parentKey: 'maps',
-      },
-      {
-        key: 'vector',
-        label: 'Vector Maps',
-        url: '/maps/vector',
-        parentKey: 'maps',
-      },
-      {
-        key: 'leaflet',
-        label: 'Leaflet Maps',
-        url: '/maps/leaflet',
-        parentKey: 'maps',
-      },
-    ]
-  },
-  {
-    key: 'more',
-    label: 'MORE',
-    isTitle: true
-  },
-  {
-    key: 'multi-level',
-    label: 'Multi Level',
-    icon: 'ti-box-multiple-3',
-    collapsed: true,
-    children: [
-      {
-        key: 'second-level',
-        label: 'Second Level',
-        parentKey: 'multi-level',
-        children: [
-          {
-            key: 'item1',
-            label: 'Item 1',
-            parentKey: 'second-level',
-          },
-          {
-            key: 'item2',
-            label: 'Item 2',
-            parentKey: 'second-level',
-          },
-        ]
-      },
-      {
-        key: 'third-level',
-        label: 'Third Level',
-        parentKey: 'multi-level',
-        children: [
-          {
-            key: 'item1',
-            label: 'Item 1',
-            parentKey: 'second-level',
-          },
-          {
-            key: 'item2',
-            label: 'Item 2',
-            parentKey: 'second-level',
-            children: [
-              {
-                key: 'item2.1',
-                label: 'Item 2.1',
-                parentKey: 'item2',
-              },
-              {
-                key: 'item2.2',
-                label: 'Item 2.2',
-                parentKey: 'item2',
-              },
-            ]
-          },
-        ]
-      },
-    ]
-  }
+ 
+ 
+  
+  // {
+  //   key: 'more',
+  //   label: 'MORE',
+  //   isTitle: true
+  // },
+  // {
+  //   key: 'multi-level',
+  //   label: 'Multi Level',
+  //   icon: 'ti-box-multiple-3',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'second-level',
+  //       label: 'Second Level',
+  //       parentKey: 'multi-level',
+  //       children: [
+  //         {
+  //           key: 'item1',
+  //           label: 'Item 1',
+  //           parentKey: 'second-level',
+  //         },
+  //         {
+  //           key: 'item2',
+  //           label: 'Item 2',
+  //           parentKey: 'second-level',
+  //         },
+  //       ]
+  //     },
+  //     {
+  //       key: 'third-level',
+  //       label: 'Third Level',
+  //       parentKey: 'multi-level',
+  //       children: [
+  //         {
+  //           key: 'item1',
+  //           label: 'Item 1',
+  //           parentKey: 'second-level',
+  //         },
+  //         {
+  //           key: 'item2',
+  //           label: 'Item 2',
+  //           parentKey: 'second-level',
+  //           children: [
+  //             {
+  //               key: 'item2.1',
+  //               label: 'Item 2.1',
+  //               parentKey: 'item2',
+  //             },
+  //             {
+  //               key: 'item2.2',
+  //               label: 'Item 2.2',
+  //               parentKey: 'item2',
+  //             },
+  //           ]
+  //         },
+  //       ]
+  //     },
+  //   ]
+  // }
 ]
 
 export const HORIZONTAL_MENU_ITEM: MenuItemType[] = [
