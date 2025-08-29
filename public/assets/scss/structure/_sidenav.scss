@@ -8,7 +8,8 @@
     bottom: 0;
     top: 0;
     width: $sidenav-width;
-    background: $menu-bg;
+    // background: $menu-bg;
+    background-color: #003366;
     box-shadow: var(--#{$prefix}box-shadow);
     border-right: $card-border-width solid $card-border-color;
     transition: $transition-base;
@@ -68,7 +69,7 @@
     }
 
     >.side-nav-item {
-        padding: 0 10px;
+        padding: 10px 10px;
     }
 
     // Multi Level Menu

@@ -48,11 +48,11 @@
     // Dark Left Sidebar
     &[data-menu-color="dark"] {
         --#{$prefix}menu-bg: #232e51;
-        --#{$prefix}menu-item-color: #97aac1;
-        --#{$prefix}menu-item-hover-color: #e2eeff;
-        --#{$prefix}menu-item-hover-bg: #2f3a5f;
-        --#{$prefix}menu-item-active-color: #e2eeff;
-        --#{$prefix}menu-item-active-bg: #2f3a5f;
+        --#{$prefix}menu-item-color: #fff;
+        --#{$prefix}menu-item-hover-color: #fff;
+        --#{$prefix}menu-item-hover-bg: #246bce;
+        --#{$prefix}menu-item-active-color: #fff;
+        --#{$prefix}menu-item-active-bg: #246bce;
     }
 
     &[data-menu-color="dark"][data-bs-theme="dark"],

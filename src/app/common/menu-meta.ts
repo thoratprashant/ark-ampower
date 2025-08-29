@@ -51,11 +51,11 @@ export const MENU_ITEMS: MenuItemType[] = [
   //   icon: 'ti-wallet',
   //   url: '/dashboards/wallet',
   // },
-  {
-    key: 'apps',
-    label: 'Apps & Pages',
-    isTitle: true
-  },
+  // {
+  //   key: 'apps',
+  //   label: 'Apps & Pages',
+  //   isTitle: true
+  // },
   // {
   //   key: 'chat',
   //   label: 'Chat',
@@ -312,142 +312,142 @@ export const MENU_ITEMS: MenuItemType[] = [
   //     },
   //   ]
   // },
-  {
-    key: 'auth',
-    label: 'Auth Pages',
-    icon: 'ti-lock',
-    collapsed: true,
-    children: [
-      {
-        key: 'login',
-        label: 'Login',
-        url: '/auth/login',
-        parentKey: 'auth',
-      },
-      {
-        key: 'register',
-        label: 'Register',
-        url: '/auth/register',
-        parentKey: 'auth',
-      },
-      {
-        key: 'logout',
-        label: 'Logout',
-        url: '/auth/logout',
-        parentKey: 'auth',
-      },
-      {
-        key: 'recover-password',
-        label: 'Recover Password',
-        url: '/auth/recover-password',
-        parentKey: 'auth',
-      },
-      {
-        key: 'create-password',
-        label: 'Create Password',
-        url: '/auth/create-password',
-        parentKey: 'auth',
-      },
-      {
-        key: 'lock-screen',
-        label: 'Lock Screen',
-        url: '/auth/lock-screen',
-        parentKey: 'auth',
-      },
-      {
-        key: 'confirm-mail',
-        label: 'Confirm Mail',
-        url: '/auth/confirm-mail',
-        parentKey: 'auth',
-      },
-      {
-        key: 'login-pin',
-        label: 'Login With PIN',
-        url: '/auth/pin-login',
-        parentKey: 'auth',
-      },
-      {
-        key: 'login-2fa',
-        label: '2FA',
-        url: '/auth/2fa',
-        parentKey: 'auth',
-      },
-      {
-        key: 'account-deactivation',
-        label: 'Account Deactivation',
-        url: '/auth/account-deactivation',
-        parentKey: 'auth',
-      },
-    ]
-  },
-  {
-    key: 'errors',
-    label: 'Error Pages',
-    icon: 'ti-server-2',
-    children: [
-      {
-        key: 'error-401',
-        label: '401 Unauthorized',
-        url: '/error-401',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-400',
-        label: '400 Bad Reques',
-        url: '/error-400',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-403',
-        label: '403 Forbidden',
-        url: '/error-403',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-404',
-        label: '404 Not Found',
-        url: '/error-404',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-408',
-        label: '408 Request Timeout',
-        url: '/error-408',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-500',
-        label: '500 Internal Server',
-        url: '/error-500',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-501',
-        label: '501 Not Implemented',
-        url: '/error-501',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-502',
-        label: '502 Service Overloaded',
-        url: '/error-502',
-        parentKey: 'errors',
-      },
-      {
-        key: 'error-404-alt',
-        label: 'Error 404 Alt',
-        url: '/pages/error-404-alt',
-        parentKey: 'errors',
-      },
-      {
-        key: 'service-unavailable',
-        label: 'Service Unavailable',
-        url: '/service-unavailable',
-        parentKey: 'errors',
-      },
+  // {
+  //   key: 'auth',
+  //   label: 'Auth Pages',
+  //   icon: 'ti-lock',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'login',
+  //       label: 'Login',
+  //       url: '/auth/login',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'register',
+  //       label: 'Register',
+  //       url: '/auth/register',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'logout',
+  //       label: 'Logout',
+  //       url: '/auth/logout',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'recover-password',
+  //       label: 'Recover Password',
+  //       url: '/auth/recover-password',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'create-password',
+  //       label: 'Create Password',
+  //       url: '/auth/create-password',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'lock-screen',
+  //       label: 'Lock Screen',
+  //       url: '/auth/lock-screen',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'confirm-mail',
+  //       label: 'Confirm Mail',
+  //       url: '/auth/confirm-mail',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'login-pin',
+  //       label: 'Login With PIN',
+  //       url: '/auth/pin-login',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'login-2fa',
+  //       label: '2FA',
+  //       url: '/auth/2fa',
+  //       parentKey: 'auth',
+  //     },
+  //     {
+  //       key: 'account-deactivation',
+  //       label: 'Account Deactivation',
+  //       url: '/auth/account-deactivation',
+  //       parentKey: 'auth',
+  //     },
+  //   ]
+  // },
+  // {
+  //   key: 'errors',
+  //   label: 'Error Pages',
+  //   icon: 'ti-server-2',
+  //   children: [
+  //     {
+  //       key: 'error-401',
+  //       label: '401 Unauthorized',
+  //       url: '/error-401',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-400',
+  //       label: '400 Bad Reques',
+  //       url: '/error-400',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-403',
+  //       label: '403 Forbidden',
+  //       url: '/error-403',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-404',
+  //       label: '404 Not Found',
+  //       url: '/error-404',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-408',
+  //       label: '408 Request Timeout',
+  //       url: '/error-408',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-500',
+  //       label: '500 Internal Server',
+  //       url: '/error-500',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-501',
+  //       label: '501 Not Implemented',
+  //       url: '/error-501',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-502',
+  //       label: '502 Service Overloaded',
+  //       url: '/error-502',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'error-404-alt',
+  //       label: 'Error 404 Alt',
+  //       url: '/pages/error-404-alt',
+  //       parentKey: 'errors',
+  //     },
+  //     {
+  //       key: 'service-unavailable',
+  //       label: 'Service Unavailable',
+  //       url: '/service-unavailable',
+  //       parentKey: 'errors',
+  //     },
 
-    ]
-  },
+  //   ]
+  // },
   // {
   //   key: 'email-templates',
   //   label: 'Email Templates',
@@ -474,32 +474,32 @@ export const MENU_ITEMS: MenuItemType[] = [
   //     },
   //   ]
   // },
-  {
-    key: 'Components',
-    label: 'COMPONENTS',
-    isTitle: true,
-  },
+  // {
+  //   key: 'Components',
+  //   label: 'COMPONENTS',
+  //   isTitle: true,
+  // },
  
-  {
-    key: 'icons',
-    label: 'Icons',
-    icon: 'ti-leaf',
-    collapsed: true,
-    children: [
-      {
-        key: 'tabler',
-        label: 'Tabler',
-        url: '/icons/tabler',
-        parentKey: 'icons',
-      },
-      {
-        key: 'solar',
-        label: 'Solar',
-        url: '/icons/solar',
-        parentKey: 'icons',
-      },
-    ]
-  },
+  // {
+  //   key: 'icons',
+  //   label: 'Icons',
+  //   icon: 'ti-leaf',
+  //   collapsed: true,
+  //   children: [
+  //     {
+  //       key: 'tabler',
+  //       label: 'Tabler',
+  //       url: '/icons/tabler',
+  //       parentKey: 'icons',
+  //     },
+  //     {
+  //       key: 'solar',
+  //       label: 'Solar',
+  //       url: '/icons/solar',
+  //       parentKey: 'icons',
+  //     },
+  //   ]
+  // },
  
  
   
@@ -562,6 +562,68 @@ export const MENU_ITEMS: MenuItemType[] = [
   //     },
   //   ]
   // }
+  {
+    key: 'Care Plan',
+    label: 'Care Plan ',
+    icon: 'ti-heart',
+    url: '/dashboards/sales', 
+  },
+  {
+    key: 'My Health',
+    label: 'My Health',
+    icon: 'ti-server-2',
+    children: [
+      {
+        key: 'Health Summary',
+        label: 'Health Summary',
+        url: '/error-401',
+        parentKey: 'errors',
+      },
+      {
+        key: 'Results',
+        label: 'Results',
+        url: '/error-400',
+        parentKey: 'errors',
+      }, 
+      {
+        key: 'Documents',
+        label: 'Documents',
+        url: '/error-400',
+        parentKey: 'errors',
+      },
+       {
+        key: 'Coverage & Claims',
+        label: 'Results',
+        url: '/error-400',
+        parentKey: 'errors',
+      },
+
+    ]
+  },
+  {
+    key: 'Appointment & Referrals',
+    label: 'Appointment & Referrals ',
+    icon: 'ti-calendar-check',
+    url: '/dashboards/sales', 
+  },
+  {
+    key: 'Request & Services',
+    label: 'Request & Services',
+    icon: 'ti-settings',
+    url: '/dashboards/sales', 
+  },
+  {
+    key: 'Messaging',
+    label: 'Messaging ',
+    icon: 'ti-message',
+    url: '/dashboards/sales', 
+  },
+  {
+    key: 'Request & Services',
+    label: 'Request & Services ',
+    icon: 'ti-briefcase',
+    url: '/dashboards/sales', 
+  },
 ]
 
 export const HORIZONTAL_MENU_ITEM: MenuItemType[] = [
