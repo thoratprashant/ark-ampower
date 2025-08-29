@@ -42,14 +42,14 @@ export const routes: Routes = [
   //       (mod) => mod.EMAIL_TEMPLATE_ROUTES
   //     ),
   // },
-  {
-    path: '',
-    component: AuthLayoutComponent,
-    loadChildren: () =>
-      import('./views/error-pages/error-pages.route').then(
-        (mod) => mod.ERROR_PAGES_ROUTES
-      ),
-  },
+  // {
+  //   path: '',
+  //   component: AuthLayoutComponent,
+  //   loadChildren: () =>
+  //     import('./views/error-pages/error-pages.route').then(
+  //       (mod) => mod.ERROR_PAGES_ROUTES
+  //     ),
+  // },
   {
     path: 'auth',
     component: AuthLayoutComponent,
