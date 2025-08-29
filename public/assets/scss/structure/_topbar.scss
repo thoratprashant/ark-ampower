@@ -94,7 +94,7 @@ html[data-bs-theme="dark"] {
 
 // Topbar Search
 .topbar-search {
-    width: 230px;
+    width: 100%;
     padding: calc($input-padding-y * 1.25) $input-padding-x;
     line-height: $input-line-height;
     background-color: $topbar-search-bg;
