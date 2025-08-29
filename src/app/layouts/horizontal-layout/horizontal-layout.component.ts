@@ -9,7 +9,8 @@ import { FooterComponent } from "../footer/footer.component";
 @Component({
   selector: 'horizontal-layout',
   standalone: true,
-  imports: [TopbarComponent, RouterModule, HorizontalNavComponent, FooterComponent],
+  // FooterComponent
+  imports: [TopbarComponent, RouterModule, HorizontalNavComponent, ],
   templateUrl: './horizontal-layout.component.html',
   styles: ``
 })

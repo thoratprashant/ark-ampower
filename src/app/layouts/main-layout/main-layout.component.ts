@@ -13,7 +13,8 @@ import type { LayoutState } from '@/store/layout/layout-reducers';
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [TopbarComponent, SidebarComponent, FooterComponent, RouterModule, NgbOffcanvasModule],
+  // FooterComponent
+  imports: [TopbarComponent, SidebarComponent, RouterModule, NgbOffcanvasModule],
   templateUrl: './main-layout.component.html',
   styles: ``
 })
