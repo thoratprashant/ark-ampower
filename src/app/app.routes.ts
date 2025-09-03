@@ -28,13 +28,13 @@ export const routes: Routes = [
       },
     ],
   },
-  {
-    path: '',
-    loadChildren: () =>
-      import('./views/other-pages/other-page.route').then(
-        (mod) => mod.OTHER_ROUTES
-      ),
-  },
+  // {
+  //   path: '',
+  //   loadChildren: () =>
+  //     import('./views/other-pages/other-page.route').then(
+  //       (mod) => mod.OTHER_ROUTES
+  //     ),
+  // },
   // {
   //   path: 'email-templates',
   //   loadChildren: () =>
