@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkAmpower=self.webpackChunkAmpower||[]).push([[890],{1890:(S,d,n)=>{n.r(d),n.d(d,{VIEWS_ROUTES:()=>t});const t=[{path:"icons",loadChildren:()=>n.e(566).then(n.bind(n,2566)).then(h=>h.ICONS_ROUTES)},{path:"",loadChildren:()=>n.e(639).then(n.bind(n,5639)).then(h=>h.NOTIFICATIONS_ROUTES)}]}}]);
