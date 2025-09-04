@@ -1,0 +1,1 @@
+import"./chunk-EQDQRRRY.js";var o=[{path:"icons",loadChildren:()=>import("./chunk-W6COKCMD.js").then(t=>t.ICONS_ROUTES)},{path:"",loadChildren:()=>import("./chunk-P5CKNFUW.js").then(t=>t.NOTIFICATIONS_ROUTES)}];export{o as VIEWS_ROUTES};

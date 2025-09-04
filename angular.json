@@ -17,9 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ampower",
+            "outputPath": "dist/ark-ampower",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "browser": "src/main.ts", 
             "polyfills": [
               "zone.js",
               "src/polyfills.ts",
@@ -54,7 +54,12 @@
               "dropzone",
               "deepmerge",
               "dragula",
-              "leaflet"
+              "leaflet",
+              "lodash/throttle.js",
+              "lodash/throttle",
+              "lodash/debounce.js",
+              "lodash/debounce",
+              "simplebar-core"
             ],
             "stylePreprocessorOptions": {
               "sass": {
