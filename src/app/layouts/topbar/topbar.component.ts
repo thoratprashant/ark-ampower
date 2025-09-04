@@ -6,7 +6,7 @@ import { Router, RouterLink } from '@angular/router';
 import { NgbDropdownModule, NgbModal, NgbModalModule, NgbOffcanvasModule } from '@ng-bootstrap/ng-bootstrap';
 import { Store } from '@ngrx/store';
 import { appData } from './data';
-import { SimplebarAngularModule } from 'simplebar-angular'; 
+import { SimplebarAngularModule } from 'simplebar-angular';
 import { LogoBoxComponent } from "@components/logo-box.component";
 import { currency } from '@common/constants';
 import { logout } from '@/store/authentication/authentication.actions';
@@ -21,9 +21,9 @@ import { logout } from '@/store/authentication/authentication.actions';
 })
 export class TopbarComponent implements OnInit {
 
-  currency=currency
-  
-  
+  currency = currency
+
+
   @Output() settingsButtonClicked = new EventEmitter();
   @Output() mobileMenuButtonClicked = new EventEmitter();
 
@@ -36,7 +36,7 @@ export class TopbarComponent implements OnInit {
   color!: string;
 
   open(content: TemplateRef<any>) {
-    this.modalService.open(content,{size:"lg"})
+    this.modalService.open(content, { size: "lg" })
   }
 
   ngOnInit(): void {
@@ -68,6 +68,10 @@ export class TopbarComponent implements OnInit {
 
   logout() {
     this.store.dispatch(logout())
+  }
+
+  navigateToNotification() {
+    this.router.navigate(['/notifications']);
   }
 
 }
