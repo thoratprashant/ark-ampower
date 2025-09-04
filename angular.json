@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Osen": {
+    "Ampower": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/osen",
+            "outputPath": "dist/ampower",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -102,10 +102,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Osen:build:production"
+              "buildTarget": "Ampower:build:production"
             },
             "development": {
-              "buildTarget": "Osen:build:development"
+              "buildTarget": "Ampower:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -31,7 +31,7 @@ export class TitleService {
     if (route.snapshot.data['title']) {
       this.titleService.setTitle(
         route.snapshot.data['title'] +
-          ' | Osen - Responsive Bootstrap 5 Admin Dashboard'
+          ' | Ampower - Responsive Bootstrap 5 Admin Dashboard'
       )
     }
   }

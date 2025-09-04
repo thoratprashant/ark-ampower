@@ -41,10 +41,10 @@ function getUsers(): User[] {
   let users: User[] = JSON.parse(sessionStorage.getItem('users')!) || [
     {
       id: 1,
-      username: 'Osen',
+      username: 'Ampower',
       email: 'user@demo.com',
       password: '123456',
-      firstName: 'Osen',
+      firstName: 'Ampower',
       lastName: 'Coderthemes',
       avatar: 'assets/images/users/user-1.jpg',
       location: 'California, USA',
