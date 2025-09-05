@@ -15,49 +15,89 @@
       "prefix": "app",
       "architect": {
         "build": {
-  "builder": "@angular-devkit/build-angular:browser",
-  "options": {
-    "outputPath": "docs",
-    "index": "src/index.html",
-    "main": "src/main.ts",
-    "polyfills": [
-      "zone.js",
-      "src/polyfills.ts",
-      "@angular/localize/init"
-    ],
-    "tsConfig": "tsconfig.app.json",
-    "inlineStyleLanguage": "scss",
-    "assets": [
-      {
-        "glob": "**/*",
-        "input": "public"
-      }
-    ],
-    "styles": ["src/styles.scss"],
-    "scripts": [
-      "node_modules/jsvectormap/dist/js/jsvectormap.min.js"
-    ]
-  },
-  "configurations": {
-    "production": {
-      "outputHashing": "all",
-      "optimization": true,
-      "budgets": [
-        {
-          "type": "initial",
-          "maximumWarning": "8mb",
-          "maximumError": "8mb"
-        }
-      ]
-    },
-    "development": {
-      "optimization": false,
-      "sourceMap": true
-    }
-  },
-  "defaultConfiguration": "production"
-},
-
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/ampower",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js",
+              "src/polyfills.ts",
+              "@angular/localize/init"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jsvectormap/dist/js/jsvectormap.min.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "sweetalert2",
+              "moment",
+              "dayjs",
+              "apexcharts",
+              "jsvectormap",
+              "jsvectormap/dist/maps/world.js",
+              "jsvectormap/dist/maps/russia.js",
+              "jsvectormap/dist/maps/canada.js",
+              "jsvectormap/dist/maps/iraq.js",
+              "jsvectormap/dist/maps/spain.js",
+              "quill-delta",
+              "dropzone",
+              "deepmerge",
+              "dragula",
+              "leaflet"
+            ],
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": [
+                  "color-functions",
+                  "global-builtin",
+                  "import",
+                  "mixed-decls"
+                ]
+              }
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "8mb",
+                  "maximumError": "8mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              }
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
@@ -78,8 +118,7 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing",
-              "@angular/localize/init"
+              "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
