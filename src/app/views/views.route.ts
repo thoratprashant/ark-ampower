@@ -6,6 +6,11 @@ export const VIEWS_ROUTES: Route[] = [
     loadChildren: () =>
       import('./icons/icons.route').then((mod) => mod.ICONS_ROUTES),
   },
+   {
+    path: 'patient',
+    loadChildren: () =>
+      import('./patient/patient/patient.route').then(m => m.patientRoutes),
+  },
   {
     path: '',
     loadChildren: () =>
