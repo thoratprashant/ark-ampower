@@ -19,10 +19,21 @@ export const appointmentsReferralsRoutes: Routes = [
     path: '',
     component: AppointmentsReferralsComponent,
     children: [
-      { path: 'appointments', component: AppointmentsComponent },
-      { path: 'referrals', component: ReferralsComponent },
-      { path: 'tests-procedures', component: TestsProceduresComponent },
-      { path: '', redirectTo: 'appointments', pathMatch: 'full' },
+        { 
+            path: 'appointments', 
+            component: AppointmentsComponent, 
+            data: { title: 'Appointments' }
+        },
+        { 
+            path: 'referrals', 
+            component: ReferralsComponent,
+            data: { title: 'Referrals' } 
+        },
+        { 
+            path: 'tests-procedures', 
+            component: TestsProceduresComponent,
+            data: { title: 'Tests Procedures' } 
+        }, 
     ],
   },
 ];

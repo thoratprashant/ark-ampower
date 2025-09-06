@@ -565,8 +565,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     key: 'Care Plan',
     label: 'Care Plan ',
-    icon: 'ti-heart',
-    url: '/dashboards/sales', 
+    icon: 'ti-heart', 
   },
   {
     key: 'My Health',
@@ -604,7 +603,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     key: 'Appointment & Referrals',
     label: 'Appointment & Referrals ',
     icon: 'ti-calendar-check',
-    url: '/dashboards/sales', 
+    url: '/patient/appointments-referrals/appointments', 
   },
   {
     key: 'Request & Services',
