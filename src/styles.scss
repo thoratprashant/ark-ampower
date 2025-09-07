@@ -20,6 +20,7 @@ Custom SCSS start from here
             border-bottom: 1px solid transparent;
             font-size: 14px; 
             padding: 8px 16px;
+            color: #444;
             &.active{  
                 color: #246bce;
                 border-bottom: 1px solid #246bce;
@@ -46,4 +47,10 @@ Custom SCSS start from here
             }
         }
     } 
+}
+.badge{
+    color: #0369A1;
+    background-color: #E0F2FE; 
+    border-radius: 5px;
+    padding: 8px 6px;
 }

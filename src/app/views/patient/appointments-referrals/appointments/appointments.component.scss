@@ -1,2 +1,43 @@
 .appointments--wrapper{ 
+    .card{
+        box-shadow: 0 0 35px 0 rgba(104, 134, 177, 0.15);;
+    }
+    .time--strip{
+        border-radius: 5px;
+        background: #E5E5E5;  
+        padding: 8px 12px;  
+        font-size: 12px;
+        color: #036;
+    }
+    .appointment--card{
+        border: 1px solid #e7e9eb;
+        border-radius: 3px;
+        margin-bottom: 24px;
+        padding: 12px;
+    }
+    .cards-wrapper{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        .card-box{
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px; 
+            .btn-outline-primary{
+                // background-color: #fff;
+            }
+            &.blue{
+                background-color: #DFEFFF;
+                border-color: #246BCE;
+            }
+            &.orange{
+                background-color: #FFE9E3;
+                border-color: #FF630B;
+            }
+            &.green{
+                background-color: #E6FAE3;
+                border-color: #6AC75A;
+            }
+        }
+    }
 }
