@@ -10,22 +10,19 @@
         color: #036;
     }
     .appointment--card{
-        border: 1px solid #e7e9eb;
-        border-radius: 3px;
+        border: 1px solid #E7E9EB;
+        border-radius: 5px;
         margin-bottom: 24px;
         padding: 12px;
     }
     .cards-wrapper{
         display: grid;
-        gap: 1rem;
+        gap: 1.5rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         .card-box{
             padding: 6px 12px;
             border: 1px solid #ddd;
-            border-radius: 5px; 
-            .btn-outline-primary{
-                // background-color: #fff;
-            }
+            border-radius: 5px;  
             &.blue{
                 background-color: #DFEFFF;
                 border-color: #246BCE;
@@ -39,5 +36,8 @@
                 border-color: #6AC75A;
             }
         }
+    }
+    .visit--pre--sec{
+        gap: 20px;
     }
 }

@@ -3,107 +3,212 @@
     <div class="col-12">
       <div class="card">
         <div class="card-header p-0">
-          <ul
-            ngbNav
-            #nav="ngbNav"
-            [activeId]="1"
-            class="nav nav-tabs mb-0 w-100"
-          >
+          <ul ngbNav #nav="ngbNav" [activeId]="1" class="nav nav-tabs mb-0 w-100">
             <li [ngbNavItem]="1">
-              <a
-                ngbNavLink
-                data-bs-toggle="tab"
-                aria-expanded="true"
-                class="nav-link"
-              >
-                Upcoming  Appointments
+              <a ngbNavLink data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                Upcoming Appointments
               </a>
               <ng-template ngbNavContent>
                 <div class="container-fluid">
-                    <div class="row border-bottom mb-3 pb-3 px-2">
-                        <div class="col-12">
-                            <div class=" d-flex align-items-center justify-content-between">
-                                <h4 class="header-title ">Upcoming  Appointments</h4>
-                                <div class="d-flex flex-wrap gap-2"> 
-                                    <button type="button" class="btn btn-light">
-                                        <i class="ti ti-filter fs-16 me-1"></i>
-                                        Filter
-                                    </button> 
-                                    <button type="button" class="btn btn-primary">Create Appointment Request</button> 
-                                </div>
-                            </div>
-                            
+                  <div class="row border-bottom mb-3 pb-3 px-2">
+                    <div class="col-12">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h4 class="header-title">Upcoming Appointments</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                          <button type="button" class="btn btn-light">
+                            <i class="ti ti-filter fs-16 me-1"></i>
+                            Filter
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Create Appointment Request
+                          </button>
                         </div>
+                      </div>
                     </div>
-                    <div class="row border-bottom mb-3 pb-3 px-2">
-                        <div class="col-12">
-                            <div class="time--strip fw-semibold mb-3">
-                                Today
+                  </div>
+                  <div class="row border-bottom mb-3 pb-3 px-2">
+                    <div class="col-12">
+                      <div class="time--strip fw-semibold mb-3">Today</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="appointment--card">
+                        <div class="d-flex align-items-start w-100 border-bottom pb-2 mb-2">
+                          <i class="ti ti-calendar-time fs-24 text-orange me-2"></i>
+                          <div class="d-flex align-items-start justify-content-between w-100">
+                            <div class="d-flex flex-column w-100 me-2 text-dark">
+                              <h6 class="fs-16 fw-semibold mb-1 mt-2p">
+                                Dr. Emily Davis - Primary Care Visit
+                              </h6>
+                              <p class="fs-13 mb-1">
+                                Sun, Aug 24, 2025 | 8:30 AM (30 min)
+                              </p>
+                              <p class="fs-13 mb-1">
+                                <span class="d-flex flex-wrap align-items-center">
+                                  <i class="ti ti-user fs-16 me-1"></i>
+                                  <span class="me-1">In Person at</span>
+                                  <a href="#" class="text-primary fw-semibold text-decoration-underline">
+                                    47 W 13th St, New York, NY 10011
+                                  </a>
+                                </span>
+                              </p>
+                              <p class="fs-14 mb-1">
+                                <span class="fw-bold"> Reason: </span> Annual
+                                Physical & Follow-up on Labsc
+                              </p>
                             </div>
+                            <div class="badge fs-11 flex-shrink-0 fw-semibold">
+                              Completed
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-12">
-                            <div class="appointment--card">
-                                <div class="d-flex align-items-start w-100 border-bottom pb-2 mb-2">
-                                     <i class="ti ti-calendar-time fs-24 text-orange me-2"></i>
-                                     <div class="d-flex align-items-start justify-content-between w-100">
-                                        <div class="d-flex flex-column w-100 me-2 text-dark">
-                                            <h6 class="fs-16  fw-semibold mb-1 mt-2p">Dr. Emily Davis - Primary Care Visit</h6>
-                                            <p class="fs-13 mb-1">Sun, Aug 24, 2025 | 8:30 AM (30 min)</p>
-                                            <p class="fs-13 mb-1"> 
-                                                <span class="d-flex flex-wrap align-items-center">
-                                                    <i class="ti ti-user fs-16 me-1"></i>
-                                                    <span class="me-1">In Person at</span> <a href="#" class="text-primary fw-semibold"> 47 W 13th St, New York, NY 10011 </a>
-                                                </span>
-                                            </p>
-                                            <p class="fs-14 mb-1"><span class="fw-bold"> Reason: </span> Annual Physical & Follow-up on Labsc</p>
+                        <div class="d-flex align-items-center w-100">
+                          <i class="ti ti-arrow-right fs-24 text-success me-2"></i>
+                          <h6 class="fw-semibold fs-16 m-0">Your Next Steps</h6>
+                        </div>
+                        <div class="cards-wrapper w-100">
+                          <div class="card-box blue mt-2 d-flex align-items-center justify-content-between">
+                            <span class="text-dark fs-13 fw-semibold">Complete Medical History Form</span>
+                            <button type="button" class="btn btn-outline-primary">
+                              Start Now
+                            </button>
+                          </div>
+
+                          <div class="card-box orange mt-2 d-flex align-items-center justify-content-between">
+                            <span class="text-dark fs-13 fw-semibold">Upload Insurance Card</span>
+                            <button type="button" class="btn btn-outline-primary">
+                              Upload
+                            </button>
+                          </div>
+
+                          <div class="card-box green mt-2 d-flex align-items-center justify-content-between">
+                            <span class="text-dark fs-13 fw-semibold">Copay Due: $25 <br />
+                              <a href="#" class="text-decoration-underline">View Billing Summary</a>
+                            </span>
+                            <button type="button" class="btn btn-outline-primary">
+                              Pay Now
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex visit--pre--sec">
+                          <div class="appointment--card w-100 mt-2">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="d-flex align-items-start w-100">
+                                  <i class="ti ti-notes fs-24 text-primary me-2"></i>
+                                  <div class="d-flex align-items-start w-100">
+                                    <div class="d-flex flex-column w-100 me-2 text-dark">
+                                      <h6 class="fs-16 fw-semibold mb-1 mt-2p">
+                                        Visit Prep & Instructions
+                                      </h6>
+                                      <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                          <p class="fs-13 d-flex align-items-center mb-1">
+                                            <i class="ti ti-briefcase fs-16 me-1"></i>
+                                            Bring ID and Insurance Card
+                                          </p>
+                                          <p class="fs-13 mb-1">
+                                            <span class="d-flex flex-wrap align-items-center">
+                                              <i class="ti ti-file-type-pdf fs-16 me-1"></i>
+                                              <a href="#" class="text-primary fw-semibold text-decoration-underline">
+                                                Pre-Visit Instructions PDF
+                                              </a>
+                                            </span>
+                                          </p>
+                                          <p class="fs-14 mb-0">
+                                            <span class="fw-semibold">
+                                              Transportation Requested:
+                                            </span>
+                                            Yes
+                                          </p>
                                         </div>
-                                        <div class="badge fs-11 flex-shrink-0 fw-semibold">Completed</div>
-                                     </div>
-                                </div>
-                                <div class="d-flex align-items-center w-100">
-                                     <i class="ti ti-arrow-right fs-24 text-success me-2"></i>
-                                     <h6 class="fw-semibold fs-16 m-0">Your Next Steps</h6>
-                                </div>
-                                <div class="cards-wrapper w-100">
-                                    <div class="card-box blue mt-2 d-flex align-items-center justify-content-between">
-                                        <span class="text-dark fs-13 fw-semibold">Complete Medical History Form</span>
-                                        <button type="button" class="btn btn-outline-primary">Start Now</button>
+                                        <div class="col-12 col-lg-6">
+                                          <p class="fs-13 d-flex align-items-center mb-1">
+                                            <i class="ti ti-clock-hour-5 fs-17 me-1"></i>
+                                            Arrive 15 minutes early
+                                          </p>
+                                          <p class="fs-14 mb-1">
+                                            <span class="fw-semibold">
+                                              Interpreter Needed:
+                                            </span>
+                                            No
+                                          </p>
+                                        </div>
+                                      </div>
                                     </div>
-
-                                    <div class="card-box orange mt-2 d-flex align-items-center justify-content-between"> 
-                                        <span class="text-dark fs-13 fw-semibold">Upload Insurance Card</span>
-                                        <button type="button" class="btn btn-outline-primary">Upload</button>
-                                    </div>
-
-                                    <div class="card-box green mt-2 d-flex align-items-center justify-content-between">
-                                        <span class="text-dark fs-13 fw-semibold">Copay Due: $25 <br>
-                                            <a href="#" class="link">View Billing Summary</a>
-                                        </span>
-                                       <button type="button" class="btn btn-outline-primary">Pay Now</button>
-                                    </div>
+                                  </div>
                                 </div>
-
+                              </div>
                             </div>
+                          </div>
+                          <div class="appointment--card w-100 mt-2">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="d-flex align-items-start w-100">
+                                  <i class="ti ti-notes fs-24 text-primary me-2"></i>
+                                  <div class="d-flex align-items-start w-100">
+                                    <div class="d-flex flex-column w-100 me-2 text-dark">
+                                      <h6 class="fs-16 fw-semibold mb-1 mt-2p">
+                                        Provider & Location
+                                      </h6>
+                                      <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                          <p class="fs-13 d-flex align-items-center mb-1">
+                                            <i class="ti ti-user fs-16 me-1"></i>
+                                            Dr. Emily Davis, MD – Internal
+                                            Medicine
+                                          </p>
+                                          <p class="fs-13 mb-1">
+                                            <span class="d-flex flex-wrap align-items-center">
+                                              <i class="ti ti-phone fs-16 me-1"></i>
+
+                                              (555) 555-1234
+                                            </span>
+                                          </p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                          <p class="fs-13 d-flex align-items-center mb-1">
+                                            <i class="ti ti-building-hospital fs-17 me-1"></i>
+                                            AMHealth Primary Care Clinic,
+                                          </p>
+                                          <p class="fs-13 d-flex align-items-center mb-1">
+                                            <i class="ti ti-map-pin fs-17 me-1"></i>
+                                            <a href="#" class="text-primary fw-semibold text-decoration-underline">
+                                              47 W 13th St, New York, NY 10011
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <button type="button" class="btn btn-primary">			
+                            Confirm Appointment
+                          </button>	
+                          <button type="button" class="btn btn-light">			  
+                            Cancel
+                          </button>	
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
               </ng-template>
             </li>
+
+
             <li [ngbNavItem]="2">
-              <a
-                ngbNavLink
-                data-bs-toggle="tab"
-                aria-expanded="false"
-                class="nav-link"
-              >
+              <a ngbNavLink data-bs-toggle="tab" aria-expanded="false" class="nav-link">
                 Past Appointments
               </a>
               <ng-template ngbNavContent>
                 <p class="mb-0">
                   <span
-                    class="px-1 rounded me-1 fw-semibold d-inline-block bg-danger-subtle text-danger float-start"
-                    >P</span
-                  >
+                    class="px-1 rounded me-1 fw-semibold d-inline-block bg-danger-subtle text-danger float-start">P</span>
                   "Hi there! I'm a passionate individual who loves to explore
                   new ideas and connect with like-minded people. My interests
                   span a wide range of topics including technology, literature,
@@ -114,10 +219,9 @@
               </ng-template>
             </li>
           </ul>
-          
         </div>
-        <div class="card-body px-0"> 
-            <div [ngbNavOutlet]="nav" class="tab-content"></div>
+        <div class="card-body px-0">
+          <div [ngbNavOutlet]="nav" class="tab-content"></div>
         </div>
       </div>
     </div>
