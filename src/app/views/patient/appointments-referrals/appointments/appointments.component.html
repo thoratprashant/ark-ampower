@@ -1,1 +1,74 @@
-<p>appointments works!</p>
+<div class="container-fluid appointments--wrapper">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header p-0">
+          <ul
+            ngbNav
+            #nav="ngbNav"
+            [activeId]="1"
+            class="nav nav-tabs mb-0 w-100"
+          >
+            <li [ngbNavItem]="1">
+              <a
+                ngbNavLink
+                data-bs-toggle="tab"
+                aria-expanded="true"
+                class="nav-link"
+              >
+                Upcoming  Appointments
+              </a>
+              <ng-template ngbNavContent>
+                <div class="container-fluid">
+                    <div class="row border-bottom mb-3 pb-3 px-2">
+                        <div class="col-12">
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <h4 class="header-title">Upcoming  Appointments</h4>
+                                <div class="d-flex flex-wrap gap-2"> 
+                                    <button type="button" class="btn btn-light">
+                                        <i class="ti ti-filter fs-16 me-1"></i>
+                                        Filter
+                                    </button> 
+                                    <button type="button" class="btn btn-primary">Create Appointment Request</button> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+              </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+              <a
+                ngbNavLink
+                data-bs-toggle="tab"
+                aria-expanded="false"
+                class="nav-link"
+              >
+                Past Appointments
+              </a>
+              <ng-template ngbNavContent>
+                <p class="mb-0">
+                  <span
+                    class="px-1 rounded me-1 fw-semibold d-inline-block bg-danger-subtle text-danger float-start"
+                    >P</span
+                  >
+                  "Hi there! I'm a passionate individual who loves to explore
+                  new ideas and connect with like-minded people. My interests
+                  span a wide range of topics including technology, literature,
+                  travel, and fitness. I believe in the power of continuous
+                  learning and enjoy challenging myself to grow both personally
+                  and professionally.
+                </p>
+              </ng-template>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="card-body px-0"> 
+            <div [ngbNavOutlet]="nav" class="tab-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

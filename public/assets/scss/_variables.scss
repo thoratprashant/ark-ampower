@@ -43,7 +43,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:       #465dff;
+$blue:       #246BCE;
 $indigo:     #6b5eae;
 $purple:     #783bff;
 $pink:       #ff679b;
@@ -869,8 +869,8 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .5rem;
-$input-btn-padding-x:         1.1rem;
+$input-btn-padding-y:         5px;
+$input-btn-padding-x:         14px;
 $input-btn-font-family:       null;
 $input-btn-font-size:         $font-size-base;
 $input-btn-line-height:       $line-height-base;
@@ -916,7 +916,7 @@ $btn-font-size-lg:            $input-btn-font-size-lg;
 
 $btn-border-width:            $input-btn-border-width;
 
-$btn-font-weight:             $font-weight-normal;
+$btn-font-weight:             $font-weight-semibold;
 $btn-box-shadow:              0px 2px 6px 0px;
 $btn-focus-width:             $input-btn-focus-width;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow;
