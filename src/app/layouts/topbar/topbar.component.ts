@@ -36,8 +36,9 @@ export class TopbarComponent implements OnInit {
   color!: string;
 
   open(content: TemplateRef<any>) {
-    this.modalService.open(content, { size: "lg" })
+    this.modalService.open(content, { size: "lg" }) 
   }
+  
 
   ngOnInit(): void {
     this.store.select('layout').subscribe((data: LayoutState) => {
