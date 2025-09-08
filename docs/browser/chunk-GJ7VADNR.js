@@ -1,0 +1,1 @@
+import"./chunk-EQDQRRRY.js";var e=[{path:"icons",loadChildren:()=>import("./chunk-HVGP2KOF.js").then(t=>t.ICONS_ROUTES)},{path:"patient",loadChildren:()=>import("./chunk-NX6XIBOV.js").then(t=>t.patientRoutes)},{path:"",loadChildren:()=>import("./chunk-BYJKBTBU.js").then(t=>t.NOTIFICATIONS_ROUTES)}];export{e as VIEWS_ROUTES};
