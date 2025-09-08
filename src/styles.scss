@@ -9,52 +9,63 @@
 @import "quill/dist/quill.snow.css";
 @import "quill/dist/quill.bubble.css";
 
+//Overall project font-family
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
 
 /* --------------------------
 Custom SCSS start from here
 -----------------------------*/
-.nav-tabs{
-    .nav-item{
-        .nav-link{
+.nav-tabs {
+    .nav-item {
+        .nav-link {
             border: 0;
             border-bottom: 1px solid transparent;
-            font-size: 14px; 
+            font-size: 14px;
             padding: 8px 16px;
             color: #444;
-            &.active{  
+
+            &.active {
                 color: #246bce;
                 border-bottom: 1px solid #246bce;
             }
         }
     }
 }
-.nav-tabs{
-    &.button-nav-tabs{
+
+.nav-tabs {
+    &.button-nav-tabs {
         background-color: #dfefff;
         padding: 5px;
         border-radius: 7px;
-        .nav-item{
-            .nav-link{
+
+        .nav-item {
+            .nav-link {
                 border: 0;
                 font-size: 14px;
                 color: #246bce;
                 padding: 6px 16px;
-                &.active{
+
+                &.active {
                     background-color: #246bce;
                     border-radius: 7px;
                     color: #fff;
                 }
             }
         }
-    } 
+    }
 }
-.badge{
+
+.badge {
     color: #0369A1;
-    background-color: #E0F2FE; 
+    background-color: #E0F2FE;
     border-radius: 5px;
     padding: 8px 6px;
+
     &.Scheduled {
         color: #92400E;
-        background-color: #FEF3C7; 
+        background-color: #FEF3C7;
     }
 }
