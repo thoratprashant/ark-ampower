@@ -26,111 +26,97 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row border-bottom mb-3 pb-3 px-2">
+                  <div class="row px-2">
                     <div class="col-12">
-                      <div class="time--strip fw-semibold mb-3">Today</div>
-                    </div>
-                    <div class="col-12">
-                      <div class="appointment--card">
-                        <div class="d-flex align-items-start w-100 border-bottom pb-2 mb-2">
-                          <i class="ti ti-calendar-time fs-24 text-orange me-2"></i>
-                          <div class="d-flex align-items-start justify-content-between w-100">
-                            <div class="d-flex flex-column w-100 me-2 text-dark">
-                              <h6 class="fs-16 fw-semibold mb-1 mt-2p">
-                                Dr. Emily Davis - Primary Care Visit
-                              </h6>
-                              <p class="fs-13 mb-1">
-                                Sun, Aug 24, 2025 | 8:30 AM (30 min)
-                              </p>
-                              <p class="fs-13 mb-1">
-                                <span class="d-flex flex-wrap align-items-center">
-                                  <i class="ti ti-user fs-16 me-1"></i>
-                                  <span class="me-1">In Person at</span>
-                                  <a href="#" class="text-primary fw-semibold text-decoration-underline">
-                                    47 W 13th St, New York, NY 10011
-                                  </a>
-                                </span>
-                              </p>
-                              <p class="fs-14 mb-1">
-                                <span class="fw-bold"> Reason: </span> Annual
-                                Physical & Follow-up on Labsc
-                              </p>
+                      <div class="col-12" *ngFor="let group of appointmentGroups">
+                        <!-- Day Strip -->
+                        <div class="time--strip fw-semibold mb-3">{{ group.day }}</div>
+
+                        <!-- Appointments under this day -->
+                        <div *ngFor="let appt of group.appointments" class="appointment--card mb-3">
+
+                          <!-- Header -->
+                          <div class="d-flex align-items-start w-100 border-bottom pb-2 mb-2">
+                            <i class="ti ti-calendar-time fs-24 text-orange me-2"></i>
+                            <div class="d-flex align-items-start justify-content-between w-100">
+                              <div class="d-flex flex-column w-100 me-2 text-dark">
+                                <h6 class="fs-16 fw-semibold mb-1 mt-2p">
+                                  {{ appt.doctor }} - {{ appt.specialty }}
+                                </h6>
+                                <p class="fs-13 mb-1">{{ appt.date }} | {{ appt.time }}</p>
+                                <p class="fs-13 mb-1">
+                                  <span class="d-flex align-items-start">
+                                    <i class="ti ti-user fs-16 me-1 mt-2p"></i>
+                                    <span class="me-1 flex-shrink-0">{{ appt.mode }} at</span>
+                                    <a href="#" class="text-primary fw-semibold text-decoration-underline">
+                                      {{ appt.address }}
+                                    </a>
+                                  </span>
+                                </p>
+                                <p class="fs-14 mb-1">
+                                  <span class="fw-bold">Reason:</span> {{ appt.reason }}
+                                </p>
+                              </div>
+                              <div class="badge fs-11 flex-shrink-0 fw-semibold {{appt.status}}">
+                                {{ appt.status }}
+                              </div>
                             </div>
-                            <div class="badge fs-11 flex-shrink-0 fw-semibold">
-                              Completed
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex align-items-center w-100">
-                          <i class="ti ti-arrow-right fs-24 text-success me-2"></i>
-                          <h6 class="fw-semibold fs-16 m-0">Your Next Steps</h6>
-                        </div>
-                        <div class="cards-wrapper w-100">
-                          <div class="card-box blue mt-2 d-flex align-items-center justify-content-between">
-                            <span class="text-dark fs-13 fw-semibold">Complete Medical History Form</span>
-                            <button type="button" class="btn btn-outline-primary">
-                              Start Now
-                            </button>
                           </div>
 
-                          <div class="card-box orange mt-2 d-flex align-items-center justify-content-between">
-                            <span class="text-dark fs-13 fw-semibold">Upload Insurance Card</span>
-                            <button type="button" class="btn btn-outline-primary">
-                              Upload
-                            </button>
+                          <!-- Next Steps -->
+                          <div class="d-flex align-items-center w-100">
+                            <i class="ti ti-arrow-right fs-24 text-success me-2"></i>
+                            <h6 class="fw-semibold fs-16 m-0">Your Next Steps</h6>
+                          </div>
+                          <div class="cards-wrapper w-100">
+                            <div *ngFor="let step of appt.nextSteps"
+                              class="card-box mt-2 d-flex align-items-center justify-content-between"
+                              [ngClass]="step.type">
+                              <span class="text-dark fs-13 fw-semibold">
+                                {{ step.label }}
+                                <br *ngIf="step.link" />
+                                <a *ngIf="step.link" href="#" class="text-decoration-underline">{{ step.link }}</a>
+                              </span>
+                              <button type="button" class="btn btn-outline-primary">{{ step.button }}</button>
+                            </div>
                           </div>
 
-                          <div class="card-box green mt-2 d-flex align-items-center justify-content-between">
-                            <span class="text-dark fs-13 fw-semibold">Copay Due: $25 <br />
-                              <a href="#" class="text-decoration-underline">View Billing Summary</a>
-                            </span>
-                            <button type="button" class="btn btn-outline-primary">
-                              Pay Now
-                            </button>
-                          </div>
-                        </div>
-                        <div class="d-flex visit--pre--sec">
-                          <div class="appointment--card w-100 mt-2 mb-2">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="d-flex align-items-start w-100">
-                                  <i class="ti ti-notes fs-24 text-primary me-2"></i>
+                          <!-- Visit Prep & Instructions -->
+                          <div class="d-flex visit--pre--sec">
+                            <div class="appointment--card w-100 mt-2 mb-2">
+                              <div class="row">
+                                <div class="col-12">
                                   <div class="d-flex align-items-start w-100">
+                                    <i class="ti ti-notes fs-24 text-primary me-2"></i>
                                     <div class="d-flex flex-column w-100 me-2 text-dark">
-                                      <h6 class="fs-16 fw-semibold mb-1 mt-2p">
-                                        Visit Prep & Instructions
-                                      </h6>
+                                      <h6 class="fs-16 fw-semibold mb-1 mt-2p">Visit Prep & Instructions</h6>
                                       <div class="row">
                                         <div class="col-12 col-lg-6">
-                                          <p class="fs-13 d-flex align-items-center mb-1">
-                                            <i class="ti ti-briefcase fs-16 me-1"></i>
-                                            Bring ID and Insurance Card
+                                          <p class="fs-13 d-flex align-items-start mb-1">
+                                            <i class="ti ti-briefcase fs-16 mt-2p me-1"></i>
+                                            {{ appt.visitPrep.instructions }}
                                           </p>
-                                          <p class="fs-13 mb-1">
-                                            <span class="d-flex flex-wrap align-items-center">
-                                              <i class="ti ti-file-type-pdf fs-16 me-1"></i>
+                                          <p *ngIf="appt.visitPrep.pdf" class="fs-13 mb-1">
+                                            <span class="d-flex align-items-start">
+                                              <i class="ti ti-file-type-pdf fs-16 me-1 mt-2p"></i>
                                               <a href="#" class="text-primary fw-semibold text-decoration-underline">
-                                                Pre-Visit Instructions PDF
+                                                {{ appt.visitPrep.pdf }}
                                               </a>
                                             </span>
                                           </p>
                                           <p class="fs-14 mb-0">
-                                            <span class="fw-semibold">
-                                              Transportation Requested:
-                                            </span>
-                                            Yes
+                                            <span class="fw-semibold">Transportation Requested:</span>
+                                            {{ appt.visitPrep.transport }}
                                           </p>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                          <p class="fs-13 d-flex align-items-center mb-1">
-                                            <i class="ti ti-clock-hour-5 fs-17 me-1"></i>
-                                            Arrive 15 minutes early
+                                          <p class="fs-13 d-flex align-items-start mb-1">
+                                            <i class="ti ti-clock-hour-5 fs-17 me-1 mt-2p"></i>
+                                            {{ appt.visitPrep.arrive }}
                                           </p>
                                           <p class="fs-14 mb-1">
-                                            <span class="fw-semibold">
-                                              Interpreter Needed:
-                                            </span>
-                                            No
+                                            <span class="fw-semibold">Interpreter Needed:</span>
+                                            {{ appt.visitPrep.interpreter }}
                                           </p>
                                         </div>
                                       </div>
@@ -139,41 +125,35 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="appointment--card w-100 mt-2 mb-2">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="d-flex align-items-start w-100">
-                                  <i class="ti ti-notes fs-24 text-primary me-2"></i>
+
+                            <!-- Provider & Location -->
+                            <div class="appointment--card w-100 mt-2 mb-2">
+                              <div class="row">
+                                <div class="col-12">
                                   <div class="d-flex align-items-start w-100">
+                                    <i class="ti ti-notes fs-24 text-primary me-2"></i>
                                     <div class="d-flex flex-column w-100 me-2 text-dark">
-                                      <h6 class="fs-16 fw-semibold mb-1 mt-2p">
-                                        Provider & Location
-                                      </h6>
+                                      <h6 class="fs-16 fw-semibold mb-1 mt-2p">Provider & Location</h6>
                                       <div class="row">
                                         <div class="col-12 col-lg-6">
-                                          <p class="fs-13 d-flex align-items-center mb-1">
-                                            <i class="ti ti-user fs-16 me-1"></i>
-                                            Dr. Emily Davis, MD – Internal
-                                            Medicine
+                                          <p class="fs-13 d-flex align-items-start mb-1">
+                                            <i class="ti ti-user fs-16 me-1 mt-2p"></i>
+                                            {{ appt.provider.name }}
                                           </p>
                                           <p class="fs-13 mb-1">
-                                            <span class="d-flex flex-wrap align-items-center">
-                                              <i class="ti ti-phone fs-16 me-1"></i>
-
-                                              (555) 555-1234
-                                            </span>
+                                            <i class="ti ti-phone fs-16 me-1"></i>
+                                            {{ appt.provider.phone }}
                                           </p>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                          <p class="fs-13 d-flex align-items-center mb-1">
-                                            <i class="ti ti-building-hospital fs-17 me-1"></i>
-                                            AMHealth Primary Care Clinic,
+                                          <p class="fs-13 d-flex align-items-start mb-1">
+                                            <i class="ti ti-building-hospital fs-17 me-1 mt-2p"></i>
+                                            {{ appt.provider.clinic }}
                                           </p>
-                                          <p class="fs-13 d-flex align-items-center mb-1">
-                                            <i class="ti ti-map-pin fs-17 me-1"></i>
+                                          <p class="fs-13 d-flex align-items-start mb-1">
+                                            <i class="ti ti-map-pin fs-17 me-1 mt-2p"></i>
                                             <a href="#" class="text-primary fw-semibold text-decoration-underline">
-                                              47 W 13th St, New York, NY 10011
+                                              {{ appt.provider.address }}
                                             </a>
                                           </p>
                                         </div>
@@ -183,15 +163,17 @@
                                 </div>
                               </div>
                             </div>
+                          </div> 
+                          
+                          <!-- Footer -->
+                          <div class="d-flex flex-wrap app--footer align-items-center justify-content-end">
+                            <button *ngFor="let btn of appt.footerButtons" type="button" [ngClass]="btn.style">
+                              {{ btn.label }}
+                            </button>
                           </div>
                         </div>
-                        <div class="d-flex flex-wrap app--footer align-items-center justify-content-end">
-                          <button type="button" class="btn btn-primary dark-primary"> Confirm Appointment  </button>
-                          <button type="button" class="btn btn-light">Cancel </button>
-                          <button type="button" class="btn btn-warning">Reschedule</button>
-                          <button type="button" class="btn btn-info">Message Care Navigator</button>
-                        </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
