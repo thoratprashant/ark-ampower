@@ -1,0 +1,57 @@
+.mt-2p{margin-top: 2px;}
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+  // styles here
+}
+
+// Small devices (landscape phones, ≥576px)
+@include media-breakpoint-up(sm) {
+  // styles here
+}
+@include media-breakpoint-only(sm) {
+  // styles here
+}
+
+// Medium devices (tablets, ≥768px)
+@include media-breakpoint-up(md) {
+  // styles here
+}
+@include media-breakpoint-only(md) {
+  // styles here
+}
+@include media-breakpoint-down(md) {
+  // styles here
+}
+
+// Large devices (desktops, ≥992px)
+@include media-breakpoint-up(lg) {
+  // styles here
+}
+@include media-breakpoint-only(lg) {
+  // styles here
+}
+@include media-breakpoint-down(lg) {
+  // styles here
+}
+
+// Extra large devices (large desktops, ≥1200px)
+@include media-breakpoint-up(xl) {
+  // styles here
+}
+@include media-breakpoint-only(xl) {
+  // styles here
+}
+@include media-breakpoint-down(xl) {
+  // styles here
+}
+
+// Extra extra large devices (very large screens, ≥1400px)
+@include media-breakpoint-up(xxl) {
+  // styles here
+}
+@include media-breakpoint-only(xxl) {
+  // styles here
+}
+@include media-breakpoint-down(xxl) {
+  // styles here
+}
