@@ -32,7 +32,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     key: 'My Health',
     label: 'My Health',
-    icon: 'ti-server-2',
+    icon: 'ti-clipboard-heart',
     children: [
       {
         key: 'Health Summary',
