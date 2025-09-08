@@ -73,49 +73,30 @@
             </span>
             <i class="ti ti-chevron-down d-none d-lg-block align-middle ms-2"></i>
           </a>
-          <div ngbDropdownMenu class="dropdown-menu-end">
-
-            <div class="dropdown-header noti-title">
-              <h6 class="text-overflow m-0">Welcome !</h6>
-            </div>
-
+          <div ngbDropdownMenu class="dropdown-menu-end"> 
 
             <a href="javascript:void(0);" ngbDropdownItem>
-              <i class="ti ti-user-hexagon me-1 fs-17 align-middle"></i>
-              <span class="align-middle">My Account</span>
-            </a>
-
-
-            <a routerLink="/dashboards/wallet" ngbDropdownItem>
-              <i class="ti ti-wallet me-1 fs-17 align-middle"></i>
-              <span class="align-middle">Wallet : <span class="fw-semibold">{{currency}}985.25</span></span>
-            </a>
-
+              <i class="ti ti-user-plus me-2 fs-17 align-middle"></i>
+              <span class="align-middle text-dark fs-13 fw-semibold">My Info</span>
+            </a> 
 
             <a href="javascript:void(0);" ngbDropdownItem>
-              <i class="ti ti-settings me-1 fs-17 align-middle"></i>
-              <span class="align-middle">Settings</span>
+              <i class="ti ti-settings me-2 fs-17 align-middle"></i>
+              <span class="align-middle text-dark fs-13 fw-semibold">Settings</span>
             </a>
-
-
+ 
             <a href="javascript:void(0);" ngbDropdownItem>
-              <i class="ti ti-lifebuoy me-1 fs-17 align-middle"></i>
-              <span class="align-middle">Support</span>
+              <i class="ti ti-info-circle me-2 fs-17 align-middle"></i>
+              <span class="align-middle text-dark fs-13 fw-semibold">Care Needs</span>
             </a>
 
-            <div class="dropdown-divider"></div>
+            <div class="dropdown-divider"></div> 
 
+            <a href="/" ngbDropdownItem>
+               <i class="ti ti-logout me-2 fs-17 align-middle"></i>
+              <span class="align-middle text-dark fs-13 fw-semibold">Log out</span>
+            </a> 
 
-            <a href="/auth/lock-screen" ngbDropdownItem>
-              <i class="ti ti-lock-square-rounded me-1 fs-17 align-middle"></i>
-              <span class="align-middle">Lock Screen</span>
-            </a>
-
-
-            <a (click)="logout()" class="cursor-pointer dropdown-item active fw-semibold text-danger">
-              <i class="ti ti-logout me-1 fs-17 align-middle"></i>
-              <span class="align-middle">Sign Out</span>
-            </a>
           </div>
         </div>
       </div>
