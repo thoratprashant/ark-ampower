@@ -2,7 +2,7 @@ import { changetheme } from '@/store/layout/layout-action';
 import type { LayoutState } from '@/store/layout/layout-reducers';
 import { getLayoutColor } from '@/store/layout/layout-selector';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, EventEmitter, inject, Output, type OnInit, type TemplateRef } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { NgbDropdownModule, NgbModal, NgbModalModule, NgbOffcanvasModule } from '@ng-bootstrap/ng-bootstrap';
 import { Store } from '@ngrx/store';
 import { appData } from './data';
@@ -14,7 +14,7 @@ import { logout } from '@/store/authentication/authentication.actions';
 @Component({
   selector: 'app-topbar',
   standalone: true,
-  imports: [NgbOffcanvasModule, NgbDropdownModule, SimplebarAngularModule, NgbModalModule, RouterLink, LogoBoxComponent],
+  imports: [NgbOffcanvasModule, NgbDropdownModule, SimplebarAngularModule, NgbModalModule, LogoBoxComponent],
   templateUrl: './topbar.component.html',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   styles: ``

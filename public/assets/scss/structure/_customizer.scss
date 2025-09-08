@@ -1,7 +1,25 @@
 .mt-2p{margin-top: 2px;}
+.app-topbar{
+  .nav-user{
+    .dropdown{
+      .dropdown-menu{
+        width: 217px;
+      }
+    }
+  }
+}
 // Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
-  // styles here
+  .app-topbar{
+    .nav-user{
+      .dropdown{
+        .dropdown-menu{
+            left: auto !important;
+            right: 0 !important;
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, ≥576px)
@@ -14,7 +32,16 @@
 
 // Medium devices (tablets, ≥768px)
 @include media-breakpoint-up(md) {
-  // styles here
+    .app-topbar{
+    .nav-user{
+      .dropdown{
+        .dropdown-menu{
+            left: auto !important;
+            right: 0 !important;
+        }
+      }
+    }
+  }
 }
 @include media-breakpoint-only(md) {
   // styles here

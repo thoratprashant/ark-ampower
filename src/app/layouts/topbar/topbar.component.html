@@ -1,12 +1,12 @@
 <header class="app-topbar">
   <div class="page-container topbar-menu ps-0">
-    <div class="d-flex align-items-center gap-2 w-100 me-1">
+    <div class="d-flex align-items-center  w-100 me-1">
 
 
       <app-logo-box />
 
 
-      <button class="sidenav-toggle-button px-2" (click)="toggleMobileMenu()">
+      <button class="sidenav-toggle-button  " (click)="toggleMobileMenu()">
         <i class="ti ti-menu-deep fs-24"></i>
       </button>
 
@@ -73,29 +73,29 @@
             </span>
             <i class="ti ti-chevron-down d-none d-lg-block align-middle ms-2"></i>
           </a>
-          <div ngbDropdownMenu class="dropdown-menu-end"> 
+          <div ngbDropdownMenu class="dropdown-menu-end">
 
             <a href="javascript:void(0);" ngbDropdownItem>
               <i class="ti ti-user-plus me-2 fs-17 align-middle"></i>
               <span class="align-middle text-dark fs-13 fw-semibold">My Info</span>
-            </a> 
+            </a>
 
             <a href="javascript:void(0);" ngbDropdownItem>
               <i class="ti ti-settings me-2 fs-17 align-middle"></i>
               <span class="align-middle text-dark fs-13 fw-semibold">Settings</span>
             </a>
- 
+
             <a href="javascript:void(0);" ngbDropdownItem>
               <i class="ti ti-info-circle me-2 fs-17 align-middle"></i>
               <span class="align-middle text-dark fs-13 fw-semibold">Care Needs</span>
             </a>
 
-            <div class="dropdown-divider"></div> 
+            <div class="dropdown-divider"></div>
 
             <a href="/" ngbDropdownItem>
-               <i class="ti ti-logout me-2 fs-17 align-middle"></i>
+              <i class="ti ti-logout me-2 fs-17 align-middle"></i>
               <span class="align-middle text-dark fs-13 fw-semibold">Log out</span>
-            </a> 
+            </a>
 
           </div>
         </div>
@@ -110,7 +110,8 @@
       <i class="ti ti-search fs-22"></i>
       <input type="search" class="form-control border-0" id="search-modal-input"
         placeholder="Search for actions, people,">
-      <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')">[esc]</button>
+      <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close"
+        (click)="modal.dismiss('Cross click')">[esc]</button>
     </div>
   </div>
 </ng-template>
