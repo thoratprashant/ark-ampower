@@ -1,13 +1,12 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
-import { RouterLink } from "@angular/router";
+import { Component } from "@angular/core"; 
 
 @Component({
   selector: 'app-logo-box',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [CommonModule],
   template: `
-    <a routerLink="/" class="logo">
+    <a class="logo">
     <span class="logo-light my-3">
       <span class="logo-lg text-center"><img src="assets/images/logo.svg" alt="logo"></span>
       <span class="logo-sm text-center"><img src="assets/images/logo-sm.png" alt="small logo"></span>
