@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core'; 
+import { Component, inject } from '@angular/core'; 
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { CreateAppointmentReqModalComponent } from '../create-appointment-req-modal/create-appointment-req-modal.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-appointments',
-  imports: [NgbNavModule, CommonModule],
+  imports: [NgbNavModule, CommonModule,MatButtonModule, MatDialogModule],
   templateUrl: './appointments.component.html',
   styleUrl: './appointments.component.scss'
 })
@@ -121,4 +124,11 @@ export class AppointmentsComponent {
       ]
     }
   ];
+   
+  readonly dialog = inject(MatDialog);
+
+  openDialog() {
+    const dialogRef = this.dialog.open(CreateAppointmentReqModalComponent);
+ 
+  }
 }

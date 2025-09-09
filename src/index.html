@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <style>
     #splash-screen {
       position: fixed;
@@ -40,10 +40,11 @@
         visibility: hidden;
       }
     }
+
   </style>
 </head>
 
-<body>
+<body class="mat-typography">
   <app-root></app-root>
   <div id="splash-screen">
     <img alt="Logo" class="light" src="./assets/images/logo-dark.png" />
@@ -53,6 +54,7 @@
     if (splashScreen) {
       splashScreen.classList.add('remove');
     }
+
   </script>
 </body>
 
