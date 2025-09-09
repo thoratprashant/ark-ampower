@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
   template: `
     <a class="logo">
     <span class="logo-light my-3">
-      <span class="logo-lg text-center"><img src="assets/images/logo.svg" alt="logo"></span>
+      <span class="logo-lg text-center"><img src="assets/images/logo.webp" alt="logo"></span>
       <span class="logo-sm text-center"><img src="assets/images/logo-sm.png" alt="small logo"></span>
     </span>
 
