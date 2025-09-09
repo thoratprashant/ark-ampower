@@ -12,7 +12,7 @@
 
   <ngx-simplebar data-simplebar>
     <ul class="side-nav">
-      @for (item of menuItems; track item.label;let first = $first) {
+      @for (item of menuItems; track $index; let first = $first) {
       @if(item.isTitle){
       <li class="side-nav-title">{{item.label}}</li>
       }@else {
@@ -53,7 +53,7 @@
     </a>
     <div #collapse="ngbCollapse"  [(ngbCollapse)]="menu.collapsed" class="collapse"  id="sidebarDashboards">
       <ul [class]="subMenuClassNames">
-        @for (child of menu.children; track child.label) {
+        @for (child of menu.children; track $index) {
         @if (hasSubmenu(child)) {
         <ng-container
           *ngTemplateOutlet="

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, type OnInit } from '@angular/core';
 import { NavigationEnd, RouterModule,  Router } from '@angular/router';
-import { HORIZONTAL_MENU_ITEM, type MenuItemType } from '@common/menu-meta';
+import {   type MenuItemType } from '@common/menu-meta';
 import { findAllParent, findMenuItem } from '@core/helper/utils';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -25,7 +25,7 @@ export class HorizontalNavComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.menuItems = HORIZONTAL_MENU_ITEM
+    // this.menuItems = HORIZONTAL_MENU_ITEM
   }
 
   ngAfterViewInit() {
