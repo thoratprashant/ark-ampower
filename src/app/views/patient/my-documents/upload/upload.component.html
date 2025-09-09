@@ -1,1 +1,19 @@
-<p>upload works!</p>
+<div class="card mb-0">
+    <div class="card-header border-bottom border-dashed d-flex justify-content-between align-items-center">
+        <h4 class="card-title mb-0">Upload</h4>
+        <a href="javascript:void(0);" (click)="closeDialog()"><i class="ti ti-x fs-20"></i></a>
+    </div>
+    <div class="card-body">
+        <div class="col-12">
+            <div class="upload--outer--wrapper d-flex flex-column align-items-center">
+                <i class="ti ti-cloud-upload mb-2"></i>
+                <h2 class="text-dark fw-semibold fs-22 mb-2">No documents yet</h2>
+                <p class="fs-13 fw-normal mb-2">Upload a file or request record from a clinic.</p>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-primary" (click)="closeDialog()">Upload</button>
+                    <button class="btn btn-sm btn-primary">Request records</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
