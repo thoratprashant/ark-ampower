@@ -1,1 +1,148 @@
-<p>imaging works!</p>
+<div class="container-fluid labs--wrapper text-dark">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex align-items-sm-center justify-content-between flex-sm-row flex-column">
+                    <h4 class="header-title fs-16 text-dark">Imaging</h4>
+                    <div class="d-flex gap-2 mt-2 mt-sm-0">
+                        <a href="javascript:void(0);" class="btn btn-sm btn-light"><i
+                                class="ti ti-filter me-1"></i>Filter</a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-primary">Upload</a>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive labs-table">
+                        <table class="table table-nowrap table-custom table-labs table-centered m-0">
+                            <thead class="thead-sm">
+                                <tr class="text-uppercase fs-12">
+                                    <th>Report ID</th>
+                                    <th>STUDY</th>
+                                    <th>Impression (excerpt)</th>
+                                    <th>Collected</th>
+                                    <th>From</th>
+                                    <th>Linked To</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fs-13 text-dark">RPT-001</td>
+                                    <td class="fs-13 text-dark">CT Chest w/contrast</td>
+                                    <td class="fs-13 text-dark">No pulmonary embolism. Mild ground-glass opacities.</td>
+                                    <td class="fs-13 text-dark">Aug 10 2025</td>
+                                    <td class="fs-13 text-dark">Dr. Mehta</td>
+                                    <td class="fs-13 text-dark">Case-1023</td>
+                                    <td>
+                                        <!-- <span class="badge  p-1"  [ngClass]="[item.appointmentStatus==='Canceled' ? 'bg-danger-subtle text-danger' : item.appointmentStatus==='Scheduled' ? 'bg-warning-subtle text-warning' : 'bg-success-subtle text-success']"  >{{item.appointmentStatus}}</span> -->
+                                        <!-- <span class="badge badge-soft-info fs-11 p-1">Completed</span> -->
+                                        <span class="badge Pending fs-11 p-1">Pending</span>
+                                        <!-- <span class="badge badge-soft-warning fs-11 p-1">In Review</span> -->
+                                    </td>
+                                    <td class="pe-3">
+                                        <div class="hstack gap-1">
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-eye fs-16"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-edit fs-16"></i></a>
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-download fs-16"></i></a> -->
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-success btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-share-3 fs-16"></i></a> -->
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-danger btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-trash fs-16"></i></a> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-13 text-dark">RPT-002</td>
+                                    <td class="fs-13 text-dark">MRI Knee w/contrast</td>
+                                    <td class="fs-13 text-dark">Complex medial meniscus tear; moderate effusion.</td>
+                                    <td class="fs-13 text-dark">Aug 05 2025</td>
+                                    <td class="fs-13 text-dark">LabCorp</td>
+                                    <td class="fs-13 text-dark">Case-1019</td>
+                                    <td>
+                                        <!-- <span class="badge  p-1"  [ngClass]="[item.appointmentStatus==='Canceled' ? 'bg-danger-subtle text-danger' : item.appointmentStatus==='Scheduled' ? 'bg-warning-subtle text-warning' : 'bg-success-subtle text-success']"  >{{item.appointmentStatus}}</span> -->
+                                        <span class="badge badge-soft-info fs-11 p-1">Completed</span>
+                                        <!-- <span class="badge-soft-danger text-danger fs-11 p-1">Pending</span> -->
+                                        <!-- <span class="badge Scheduled fs-11 p-1">In Review</span> -->
+                                    </td>
+                                    <td class="pe-3">
+                                        <div class="hstack gap-1">
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-eye fs-16"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-edit fs-16"></i></a>
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-download fs-16"></i></a> -->
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-success btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-share-3 fs-16"></i></a> -->
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-danger btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-trash fs-16"></i></a> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-13 text-dark">RPT-003</td>
+                                    <td class="fs-13 text-dark">CXR PA/LAT</td>
+                                    <td class="fs-13 text-dark">Cardiomeidastinal silhouette within normal limits.</td>
+                                    <td class="fs-13 text-dark">Jul 20 2025</td>
+                                    <td class="fs-13 text-dark">Dr. Singh</td>
+                                    <td class="fs-13 text-dark">Case-1014</td>
+                                    <td>
+                                        <!-- <span class="badge  p-1"  [ngClass]="[item.appointmentStatus==='Canceled' ? 'bg-danger-subtle text-danger' : item.appointmentStatus==='Scheduled' ? 'bg-warning-subtle text-warning' : 'bg-success-subtle text-success']"  >{{item.appointmentStatus}}</span> -->
+                                        <!-- <span class="badge badge-soft-info fs-11 p-1">Completed</span> -->
+                                        <!-- <span class="badge Pending fs-11 p-1">Pending</span> -->
+                                        <span class="badge Scheduled fs-11 p-1">In Review</span>
+                                    </td>
+                                    <td class="pe-3">
+                                        <div class="hstack gap-1">
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-eye fs-16"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-edit fs-16"></i></a>
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-primary btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-download fs-16"></i></a> -->
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-success btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-share-3 fs-16"></i></a> -->
+                                            <!-- <a href="javascript:void(0);"
+                                                class="btn btn-soft-danger btn-icon btn-sm rounded-circle"> <i
+                                                    class="ti ti-trash fs-16"></i></a> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <div class="align-items-center justify-content-between row text-center text-sm-start">
+                            <div class="col-sm">
+                                <div class="text-muted">
+                                    Showing <span class="fw-semibold">3</span> of <span class="fw-semibold">1,243</span>
+                                    Results
+                                </div>
+                            </div>
+                            <div class="col-sm-auto mt-2 mt-sm-0">
+                                <ngb-pagination [collectionSize]="30" [(page)]="page" aria-label="Default pagination" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
