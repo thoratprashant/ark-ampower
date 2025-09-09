@@ -17,11 +17,17 @@ export const patientRoutes: Routes = [
     component: PatientComponent,
     children: [
       {
-        path: 'appointments-referrals', 
-          loadChildren: () =>
+        path: 'appointments-referrals',
+        loadChildren: () =>
           import('../appointments-referrals/appointments-referrals.route')
             .then(m => m.appointmentsReferralsRoutes),
-      }, 
+      },
+      {
+        path: 'my-documents',
+        loadChildren: () =>
+          import('../my-documents/my-documents.route')
+            .then(m => m.myDocumentsRoutes),
+      },
     ],
   },
 ];

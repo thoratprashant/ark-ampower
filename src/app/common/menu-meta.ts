@@ -24,10 +24,10 @@ export type SubMenus = {
 }
 
 export const MENU_ITEMS: MenuItemType[] = [
- {
+  {
     key: 'Care Plan',
     label: 'Care Plan ',
-    icon: 'ti-heart', 
+    icon: 'ti-heart',
   },
   {
     key: 'My Health',
@@ -45,14 +45,13 @@ export const MENU_ITEMS: MenuItemType[] = [
         label: 'Results',
         url: '/error-400',
         parentKey: 'errors',
-      }, 
+      },
       {
         key: 'Documents',
         label: 'Documents',
-        url: '/error-400',
-        parentKey: 'errors',
+        url: '/patient/my-documents/labs',
       },
-       {
+      {
         key: 'Coverage & Claims',
         label: 'Results',
         url: '/error-400',
@@ -65,25 +64,25 @@ export const MENU_ITEMS: MenuItemType[] = [
     key: 'Appointment & Referrals',
     label: 'Appointment & Referrals ',
     icon: 'ti-calendar-check',
-    url: '/patient/appointments-referrals/appointments', 
+    url: '/patient/appointments-referrals/appointments',
   },
   {
     key: 'Request & Services',
     label: 'Request & Services',
     icon: 'ti-settings',
-    url: '/dashboards/sales', 
+    url: '/dashboards/sales',
   },
   {
     key: 'Messaging',
     label: 'Messaging ',
     icon: 'ti-message',
-    url: '/dashboards/sales', 
+    url: '/dashboards/sales',
   },
   {
     key: 'Resources & Education',
     label: 'Resources & Education ',
     icon: 'ti-school',
-    url: '/dashboards/sales', 
+    url: '/dashboards/sales',
   },
 ]
 
