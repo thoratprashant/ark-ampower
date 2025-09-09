@@ -3,8 +3,7 @@ import { TopbarComponent } from "../topbar/topbar.component";
 import { SidebarComponent } from "../sidebar/sidebar.component";
 import { FooterComponent } from "../footer/footer.component";
 import { RouterModule } from '@angular/router';
-import { NgbOffcanvas, NgbOffcanvasModule } from '@ng-bootstrap/ng-bootstrap';
-import { RightSidebarComponent } from '@layouts/right-sidebar/right-sidebar.component';
+import { NgbOffcanvas, NgbOffcanvasModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { Store } from '@ngrx/store';
 import { getSidebarsize } from '@/store/layout/layout-selector';
 import { changesidebarsize } from '@/store/layout/layout-action';
@@ -24,13 +23,7 @@ export class MainLayoutComponent implements OnInit {
   private offcanvasService = inject(NgbOffcanvas);
   private renderer = inject(Renderer2);
 
-
-  onSettingsButtonClicked() {
-    this.offcanvasService.open(RightSidebarComponent, {
-      position: 'end',
-      backdrop: true
-    });
-  }
+ 
 
   onToggleMobileMenu() {
     this.store.select(getSidebarsize).subscribe((size: any) => {

@@ -23,8 +23,7 @@ export class TopbarComponent implements OnInit {
 
   currency = currency
 
-
-  @Output() settingsButtonClicked = new EventEmitter();
+ 
   @Output() mobileMenuButtonClicked = new EventEmitter();
 
 
@@ -45,27 +44,13 @@ export class TopbarComponent implements OnInit {
       this.color = data.LAYOUT_THEME;
     });
   }
-
-  settingMenu() {
-    this.settingsButtonClicked.emit();
-  }
-
+ 
   toggleMobileMenu() {
     this.mobileMenuButtonClicked.emit();
   }
 
 
-  changeTheme() {
-    const color = document.documentElement.getAttribute('data-bs-theme');
-    if (color == 'light') {
-      this.store.dispatch(changetheme({ color: 'dark' }));
-    } else {
-      this.store.dispatch(changetheme({ color: 'light' }));
-    }
-    this.store.select(getLayoutColor).subscribe((color) => {
-      document.documentElement.setAttribute('data-bs-theme', color);
-    });
-  }
+  
 
   logout() {
     this.store.dispatch(logout())
