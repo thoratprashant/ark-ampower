@@ -3,14 +3,13 @@ import { TopbarComponent } from "../topbar/topbar.component";
 import { RightSidebarComponent } from '@layouts/right-sidebar/right-sidebar.component';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
-import { HorizontalNavComponent } from "../horizontal-nav/horizontal-nav.component";
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'horizontal-layout',
   standalone: true,
   // FooterComponent
-  imports: [TopbarComponent, RouterModule, HorizontalNavComponent, ],
+  imports: [TopbarComponent, RouterModule, ],
   templateUrl: './horizontal-layout.component.html',
   styles: ``
 })

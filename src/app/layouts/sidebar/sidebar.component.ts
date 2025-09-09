@@ -1,4 +1,4 @@
-import { Component, inject, type OnInit } from '@angular/core';
+import { Component, EventEmitter, inject, Output, type OnInit } from '@angular/core';
 import { SimplebarAngularModule } from 'simplebar-angular'
 import { LogoBoxComponent } from "@components/logo-box.component";
 import { MENU_ITEMS, type MenuItemType } from '@common/menu-meta';
@@ -19,6 +19,7 @@ import { getSidebarsize } from '@/store/layout/layout-selector';
   styles: ``
 })
 export class SidebarComponent implements OnInit {
+  @Output() mobileMenuButtonClicked = new EventEmitter();
 
   menuItems: MenuItemType[] = [];
   activeMenuItems: string[] = [];
@@ -65,6 +66,10 @@ export class SidebarComponent implements OnInit {
 
   hasSubmenu(menu: MenuItemType): boolean {
     return menu.children ? true : false;
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenuButtonClicked.emit();
   }
 
   scrollToActive(): void {
