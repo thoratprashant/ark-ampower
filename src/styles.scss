@@ -58,18 +58,22 @@ Custom SCSS start from here
      }
  }
 
- .badge {
-     color: #0369A1;
-     background-color: #E0F2FE;
+ .badge { 
      border-radius: 5px;
      padding: 8px 6px;
-
-     &.Scheduled {
+     &.badge-blue-dark{
+        color: #0369A1;
+        background-color: #E0F2FE;
+     } 
+      &.badge-blue-light{
+        color: #3C4FD9;
+        background-color: #E3E7FF;
+     } 
+     &.badge-yellow-light {
          color: #92400E;
          background-color: #FEF3C7;
      }
-
-     &.Pending {
+     &.badge-red-light {
          color: #E94235;
          background-color: #FFE9E3;
      }

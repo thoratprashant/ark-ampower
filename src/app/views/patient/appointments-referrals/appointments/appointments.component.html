@@ -10,7 +10,7 @@
               </a>
               <ng-template ngbNavContent>
                 <div class="container-fluid">
-                  <div class="row border-bottom mb-3 pb-3 px-2">
+                  <div class="row border-bottom pb-3 px-2">
                     <div class="col-12">
                       <div class="d-flex align-items-center justify-content-between">
                         <h4 class="header-title">Upcoming Appointments</h4>
@@ -26,16 +26,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row px-2">
-                    <div class="col-12">
-                      <div class="col-12" *ngFor="let group of appointmentGroups">
-                        <!-- Day Strip -->
+                  <div class="row">
+
+                    <!-- <div class="col-12" *ngFor="let group of appointmentGroups">
                         <div class="time--strip fw-semibold mb-3">{{ group.day }}</div>
-
-                        <!-- Appointments under this day -->
                         <div *ngFor="let appt of group.appointments" class="appointment--card mb-3">
-
-                          <!-- Header -->
                           <div class="d-flex align-items-start w-100 border-bottom pb-2 mb-2">
                             <i class="ti ti-calendar-time fs-24 text-orange me-2"></i>
                             <div class="d-flex align-items-start justify-content-between w-100">
@@ -63,7 +58,6 @@
                             </div>
                           </div>
 
-                          <!-- Next Steps -->
                           <div class="d-flex align-items-center w-100">
                             <i class="ti ti-arrow-right fs-24 text-success me-2"></i>
                             <h6 class="fw-semibold fs-16 m-0">Your Next Steps</h6>
@@ -80,8 +74,6 @@
                               <button type="button" class="btn btn-outline-primary">{{ step.button }}</button>
                             </div>
                           </div>
-
-                          <!-- Visit Prep & Instructions -->
                           <div class="d-flex visit--pre--sec">
                             <div class="appointment--card w-100 mt-2 mb-2">
                               <div class="row">
@@ -125,8 +117,6 @@
                                 </div>
                               </div>
                             </div>
-
-                            <!-- Provider & Location -->
                             <div class="appointment--card w-100 mt-2 mb-2">
                               <div class="row">
                                 <div class="col-12">
@@ -163,18 +153,89 @@
                                 </div>
                               </div>
                             </div>
-                          </div> 
-                          
-                          <!-- Footer -->
+                          </div>
                           <div class="d-flex flex-wrap app--footer align-items-center justify-content-end">
                             <button *ngFor="let btn of appt.footerButtons" type="button" [ngClass]="btn.style">
                               {{ btn.label }}
                             </button>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
+                    <div class="col-12 p-0">
+                      <div class="table-responsive labs-table">
+                        <table class="table table-nowrap table-custom m-0">
+                          <thead class="thead-sm">
+                            <tr class="text-uppercase fs-12 fw-semibold">
+                              <th>Date/Time</th>
+                              <th>Provider</th>
+                              <th>Visit type</th>
+                              <th>Tests/Procedures</th>
+                              <th>Location</th>
+                              <th>Status</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let visit of pagedVisits">
+                              <td class="fs-13 text-dark">
+                                {{ visit.datetime }} <span>{{ visit.time }}</span>
+                              </td>
+                              <td class="fs-13 text-dark">
+                                <div class="d-flex align-items-center">
+                                  <img [src]="visit.provider.avatar" width="24" alt="user-image"
+                                    class="rounded-circle me-lg-2 d-flex" />
+                                  <a class="text-primary text-decoration-underline cursor-pointer">
+                                    {{ visit.provider.name }}
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="fs-13 text-dark">{{ visit.type }}</td>
+                              <td class="fs-13 text-dark">{{ visit.procedure }}</td>
+                              <td class="fs-13 text-dark">
+                                <a class="text-primary text-decoration-underline cursor-pointer">
+                                  {{ visit.location }}
+                                </a>
+                              </td>
+                              <td>
+                                <span class="badge badge-{{ visit.status.type }} fs-11 fw-semibold">
+                                  {{ visit.status.text }}
+                                </span>
+                              </td>
+                              <td>
+                                <div class="d-flex gap-1">
+                                  <button *ngFor="let action of visit.actions"
+                                    class="btn btn-soft-{{ action.type }} btn-icon btn-sm rounded-circle">
+                                    <i class="ti {{ action.icon }} fs-16"></i>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="card-footer">
+                          <div class="align-items-center justify-content-between row text-center text-sm-start">
+                            <div class="col-sm">
+                              <div class="text-muted">
+                                Showing
+                                <span class="fw-semibold">{{ (page - 1) * pageSize + 1 }}</span> –
+                                <span class="fw-semibold">
+                                  {{ page * pageSize > visits.length ? visits.length : page * pageSize }}
+                                </span>
+                                of <span class="fw-semibold">{{ visits.length }}</span> Results
+                                Results
+                              </div>
+                            </div>
+                            <div class="col-sm-auto mt-2 mt-sm-0">
+                              <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="visits.length"
+                                [maxSize]="5" [rotate]="true" [boundaryLinks]="true"></ngb-pagination>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </ng-template>
